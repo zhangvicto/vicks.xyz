@@ -18,20 +18,25 @@ input.addEventListener("keydown",function(press){
     }})
 
 
-//sliding boxes
-var i= 0;
-var images = [];
-var time = 3000;
-images[0] = document.getElementById("card1");
-images[1] = document.getElementById("card2");
-images[2] = document.getElementById("card3");
-images[3] = document.getElementById("card4");
+//hover on box to show animation and text change
+var box1 = document.getElementById("card1");
+box1.addEventListener("mouseover",function(){
+    document.getElementById("person").style.backgroundImage = "url(/img/person/1.png)";
+    document.getElementById("text").innerHTML = "Made these back in '15. Low poly art based on real images.";
+}); 
 
-function changeImg() {
-    
+box1.addEventListener("mouseout",function(){
+    document.getElementById("person").style.backgroundImage = "url(/img/person5.gif)";
+    document.getElementById("text").innerHTML = "Keep going!";
+}); 
 
-setTimeout("changeImg()",time);
+var box2 = document.getElementById("card2");
+box2.addEventListener("mouseover",function(){
+    document.getElementById("person").style.backgroundImage = "url(/img/person/1.png)";
+    document.getElementById("text").innerHTML = "Made these back in '15. Low poly art based on real images.";
+}); 
 
-}
-
-window.onload = changeImg();
+box2.addEventListener("mouseout",function(){
+    document.getElementById("person").style.backgroundImage = "url(/img/person5.gif)";
+    document.getElementById("text").innerHTML = "Next!";
+}); 
