@@ -6,16 +6,52 @@
     <title>Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/scripts.js" async></script>
+    <script type="text/javascript" src="js/giffer.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body id="userInput">
-    <button id="btn1" class="enterBtn" onclick="btnAction()">Press Enter!</button> 
+    
+    <div class="front">
+    
+        <button id="btn1" class="enterBtn" onclick="btnAction()">Press Enter!</button> 
+    
+    </div>
+    
+    
+    
+
     <div id="main">
 
         <div class="box"> 
-            <div class="card"> 
-                
+            <div class="card" id="card1"> 
+                <img src="img/1.png" class="pic">
+                <img src="img/billboard.jpg" height="200px" class="billboard">
+            </div>
+
+            <div class="card" id="card2"> 
+                <img src="img/2.png"class="pic">
+                <img src="img/billboard.jpg" height = "200px" class="billboard">
+            </div>
+
+            <div class="card" id="card3"> 
+                <img src="img/3.png" class="pic">
+                <img src="img/billboard.jpg" height = "200px" class="billboard">
+            </div>
+
+            <div class="card" id="card4"> 
+                <img src="img/4.png" class="pic">
+                <img src="img/billboard.jpg" height = "200px" class="billboard">
+            </div>
+
+            <div class="card" id="card5"> 
+                <img src="img/5.png" class="pic">
+                <img src="img/billboard.jpg" height = "200px" class="billboard">
+            </div>
+
+            <div class="card" id="card6"> 
+                <img src="img/6.png" class="pic">
+                <img src="img/billboard.jpg" height = "200px" class="billboard">
             </div>
 
 
@@ -27,7 +63,6 @@
 
     <div class="theDude">
         <div class="person"> 
-            <img src="img/person.gif" type="gif" height="100px">
         </div>
 
         <hgroup class="speech-bubble" id="text">
@@ -36,13 +71,16 @@
     </div>
 
 
-        <hr class="line1">
+    <div> 
+
+    </div>
 
     </div>
 </body>
 
 
 <footer id="foot">
-    VicksDev 2020 <a href="mailto:vzhang24@uwo.ca">Contact</a>
+   <div style="padding:10px;"> VicksDev 2020 <strong><a href="mailto:vzhang24@uwo.ca" style="text-decoration: none;color:white;">Contact</a></strong>
+   </div>
 </footer>
 </html>
