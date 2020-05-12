@@ -13,6 +13,8 @@ body {
 }
 
 footer {
+    border-top-color:white;
+    border-top-width:2px;
     position: absolute;
     text-align: center;
     width:100%;
@@ -65,9 +67,8 @@ footer {
     margin:auto;
     position:fixed;
     width:600%;    
-    overflow:scroll;
     bottom:0;
-    background-image: url(/img/skyline3.png);
+    background-image: url(/img/skyline1.png);
     background-size: contain;
 }
 
@@ -82,6 +83,7 @@ footer {
     bottom:12px;
     left:35%;
     position: fixed;
+    pointer-events: none;
 }
 
 .pic {
