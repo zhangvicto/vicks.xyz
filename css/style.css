@@ -85,8 +85,8 @@ footer {
 }
 
 .pic {
-    height:400px;
-    width:400px;
+    height:200px;
+    position:relative;
 }
 
 .theDude {

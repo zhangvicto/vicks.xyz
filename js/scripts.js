@@ -33,7 +33,7 @@ box1.addEventListener("mouseout",function(){
 var box2 = document.getElementById("card2");
 box2.addEventListener("mouseover",function(){
     document.getElementById("person").style.backgroundImage = "url(/img/person/1.png)";
-    document.getElementById("text").innerHTML = "Made these back in '15. Low poly art based on real images.";
+    document.getElementById("text").innerHTML = "MasterMenu - a new solution to your food needs! (inProgress - Click to see)";
 }); 
 
 box2.addEventListener("mouseout",function(){
