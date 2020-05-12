@@ -7,6 +7,8 @@ html,body {
 
 footer {
     position: absolute;
+    text-align: center;
+    width:100%;
 }
 
 #main {
@@ -20,13 +22,45 @@ footer {
     display: block;
 }
 
-/* text bubble */
-.speech-bubble {
-	position: relative;
-	background: #000000;
-	border-radius: .4em;
+.box {
+
 }
 
+.theDude {
+    top:60%;
+    position:fixed;
+    margin:auto;
+    width:100%;
+    padding:0;
+}
+
+.person {
+    display:inline-block;
+    position:fixed;
+    height:100%;
+    margin:60px;
+}
+
+.line1 {
+    top:80%;
+    position: fixed;
+    width:100%;
+    height:5px;
+    background:black;
+}
+
+/* text bubble */
+.speech-bubble {
+    color:black;
+	position: fixed;
+	background: white;
+    border-radius: .4em;
+    width:20%;
+    text-align: center;
+    display:inline-block;
+    box-shadow: inset 0px 0px 10px 1px;
+    left: 40%;
+}
 .speech-bubble:after {
 	content: '';
 	position: absolute;
@@ -34,10 +68,11 @@ footer {
 	top: 50%;
 	width: 0;
 	height: 0;
-	border: 0.469em solid transparent;
-	border-right-color: #000000;
+	border: 20px solid transparent;
+	border-right-color: black;
 	border-left: 0;
 	border-bottom: 0;
-	margin-top: -0.234em;
-	margin-left: -0.469em;
+	margin-top: -10px;
+	margin-left: -20px;
 }
+
