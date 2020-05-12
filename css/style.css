@@ -89,6 +89,12 @@ footer {
     position:relative;
 }
 
+.gallery {
+    display:none;
+    background-color:white;
+}
+
+
 .theDude {
     position:fixed;
     margin:auto;
