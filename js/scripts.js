@@ -79,6 +79,8 @@ function slide(wrapper, items, prev, next) {
         items.insertBefore(cloneLast, firstSlide);
 }
 
+wrapper.classList.add('loaded');
+
 
 function timing() {
     setInterval(5000);
