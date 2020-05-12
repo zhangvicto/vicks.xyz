@@ -12,8 +12,32 @@ footer {
 #main {
     height:100%;
     display:none;
+    width:100%;
 }
 
 .enterBtn {
     border: none;
+    display: block;
+}
+
+/* text bubble */
+.speech-bubble {
+	position: relative;
+	background: #000000;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.469em solid transparent;
+	border-right-color: #000000;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -0.234em;
+	margin-left: -0.469em;
 }
