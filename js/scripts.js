@@ -7,7 +7,7 @@ function btnAction (){
     //reveal new page
     document.getElementById("main").style.display = "block";
     document.getElementById("btn1").style.display = "none";
-    document.getElementsByClassName("front").style.display = "none";
+    document.getElementById("front").style.display = "none";
 }
 
 //key pressed action
@@ -29,6 +29,14 @@ box1.addEventListener("mouseout",function(){
     document.getElementById("person").style.backgroundImage = "url(/img/person5.gif)";
     document.getElementById("text").innerHTML = "Keep going!";
 }); 
+//box1 show gallery
+box1.addEventListener("click",function(){
+    document.getElementById("gallery").style.display = "block";
+})
+var exitGallery = document.getElementById("close");
+exitGallery = addEventListener("click", function(){
+    document.getElementById("gallery").style.display = "none";
+})
 
 var box2 = document.getElementById("card2");
 box2.addEventListener("mouseover",function(){
