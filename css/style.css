@@ -55,12 +55,12 @@ footer {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 }
 
 .enterBtn:hover {
-    background-color: black;
     color:white;
-    box-shadow: 3px 3px 10px 2px;
+    box-shadow: none;
 }
 
 .box {
@@ -84,7 +84,7 @@ footer {
 
 .control {
     position: absolute;
-    top:50%;
+    top:40%;
     width:40px;
     height:40px;
     background:white;
@@ -100,6 +100,20 @@ footer {
     background-position: center;
     background-repeat:no-repeat;
     cursor:pointer;
+}
+
+.prev {
+    left:20px;
+    background-image: url(/img/left.png);
+}
+
+.next {
+    right:20px;
+    background-image: url(/img/right.png);
+}
+
+.prev:active,.next:active {
+    transform:scale(.8);
 }
 
 .billboard {
@@ -161,6 +175,7 @@ footer {
     display:inline-block;
     left: 50%;
     height:100px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 }
 .speech-bubble:after {
 	content: '';
@@ -174,12 +189,11 @@ footer {
 	border-left: 0;
 	border-bottom: 0;
 	margin-top: -0px;
-	margin-left: -20px;
+    margin-left: -20px;
 }
 
 #text {
     top:50%;
     font-size: 20px;
     margin:15px;
-    
 }

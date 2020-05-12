@@ -52,6 +52,34 @@ box2.addEventListener("mouseout",function(){
 
 //slidimation
 //warpper = wrapper, slide = card, slides = box
+var slider = document.getElementById("slider"),
+    sliderItems = document.getElementById("slider"),
+    prev = document.getElementById("slider"),
+    prev = document.getElementById("slider");
+
+slide(slider,sliderItems,prev,next);
+
+function slide(wrapper, items, prev, next) {
+    var posX1 = 0;
+        posX2 = 0;
+        posInitial,
+        posFinal,
+        threshhold = 100,
+        slides = items.getElementsByClassName('card'),
+        slidesLength = slides.length,
+        slideSize = items.getElementsByClassName('card')[0].offsetWidth,
+        firstSlide = slides[0],
+        lastSlide = slides[slidesLength - 1],
+        cloneFirst = firstSlide.cloneNode(true),
+        cloneLAst = lastSlide.cloneNode(true),
+        index = 0;
+        allowShift = true;
+
+        items.appendChild(cloneFirst);
+        items.insertBefore(cloneLast, firstSlide);
+}
+
+
 function timing() {
     setInterval(5000);
 
