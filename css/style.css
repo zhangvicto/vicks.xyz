@@ -4,6 +4,7 @@ html,body {
     padding:0;
     height: 100%;
     overflow: hidden;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -76,7 +77,8 @@ footer {
     margin:auto;
     width:100%;
     padding:0;
-    bottom:190px;;
+    bottom:190px;
+    font-family: 'Pangolin', cursive;
 }
 
 .person {
