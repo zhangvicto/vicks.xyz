@@ -68,8 +68,9 @@ footer {
     position:fixed;
     width:600%;    
     bottom:0;
-    background-image: url(/img/skyline1.png);
-    background-size: contain;
+    background-image: url(/img/skyline4.png);
+    background-size: 2000px;
+    background-repeat: no-repeat;
 }
 
 .card {
