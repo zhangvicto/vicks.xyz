@@ -48,3 +48,11 @@ box2.addEventListener("mouseout",function(){
     document.getElementById("person").style.backgroundImage = "url(/img/person5.gif)";
     document.getElementById("text").innerHTML = "Next!";
 }); 
+
+
+//slidimation
+//warpper = wrapper, slide = card, slides = box
+function timing() {
+    setInterval(5000);
+
+}
