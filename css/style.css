@@ -5,3 +5,15 @@ html,body {
     height: 100%;
 }
 
+footer {
+    position: absolute;
+}
+
+#main {
+    height:100%;
+    display:none;
+}
+
+.enterBtn {
+    border: none;
+}
