@@ -1,13 +1,9 @@
 //changing title as enter is pressed
-let clickEnter = false;
-let input = document.getElementById("i");
-input.addEventListener("keyup",function(press){
-    if (press.keyCode === 13) {
-        clickEnter = true;
-    }})
+var input = document.getElementById("userInput");
 
-let t = document.title;
-console.log(t);
-if (clickEnter = true) {
-    t = "Victor Zhang";
-}
+input.addEventListener("keydown",function(press){
+    if (press.keyCode === 13) {
+        press.preventDefault();
+        document.title = "Victor Zhang";
+        document.getElementById()
+    }})
