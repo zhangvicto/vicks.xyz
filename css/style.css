@@ -40,7 +40,7 @@ footer {
     height:100%;
     right: 50px;
     display:block;
-    background-image: ;
+    background-image: linear-gradient()
 }
 
 #content {
@@ -57,6 +57,20 @@ footer {
     display:block;
     padding-bottom: 20px;
     z-index:-1;
+}
+
+.profile {
+    top:50%;
+    border-radius:99px;
+    border-style:solid;
+    border-width: 5px;
+    border-color: rgba(211, 211, 211, 0.582);
+    width:150px;
+    height:150px;
+    background-image: url(/img/profile.jpg);
+    background-position: center;
+    background-size:cover;
+    box-shadow: inset 1px 1px 10px rgba(0,0,0,0.3);
 }
 
 .menu {
@@ -230,7 +244,7 @@ footer {
     display:inline-block;
     left: 50%;
     height:auto;
-    box-shadow: inset 1px 1px 10px rgba(0,0,0,0.3);
+    box-shadow: inset -5px 1px 10px rgba(0,0,0,0.3);
 }
 .speech-bubble:after {
 	content: '';

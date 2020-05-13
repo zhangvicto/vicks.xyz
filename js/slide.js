@@ -4,6 +4,8 @@ let slider = document.getElementById('slider'),
     prev = document.getElementById('prev'),
     next = document.getElementById('next');
 
+slide(slider,sliderItems,prev,next);
+
 function slide(wrapper, items, prev, next) {
   var posX1 = 0,
       posX2 = 0,
