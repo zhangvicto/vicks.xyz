@@ -56,6 +56,7 @@ footer {
     width:100%;
     display:block;
     padding-bottom: 20px;
+    z-index:-1;
 }
 
 .menu {
@@ -74,6 +75,11 @@ footer {
 
 .menu li {
     margin:5px;
+}
+
+.menu li:hover {
+    transform: scale(0.8);
+    transition-duration: 300ms;
 }
 
 .btnContainer {
