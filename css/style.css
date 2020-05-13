@@ -45,6 +45,7 @@ footer {
 
 .btnContainer {
     left: 50%;
+    right:100px;
 }
 
 .enterBtn {
@@ -53,11 +54,11 @@ footer {
     border-radius:50px;
     width:100px;
     height:100px;
-    left:50%;
-    right:50px;
     outline:none;
+    top:50%;
+    right:50%;
+    margin-right:-50px;
     position:absolute;
-    top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
