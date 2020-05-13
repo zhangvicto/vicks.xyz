@@ -40,14 +40,40 @@ footer {
     height:100%;
     right: 50px;
     display:block;
+    background-image: ;
 }
 
 #content {
     text-align:center;
     display:block;
     margin:auto 0;
-    top:50%;
     height:100%;
+}
+
+.intro {
+    position: absolute;
+    top:40%;
+    width:100%;
+    display:block;
+    padding-bottom: 20px;
+}
+
+.menu {
+    position: fixed;
+    list-style:none;
+    height:10%;
+    margin:0;
+    padding: 0;
+    top:35%;
+    padding-left: 15px;
+    margin-bottom: 100px;
+    display: block;
+    bottom:0;
+    right:20px;
+}
+
+.menu li {
+    margin:5px;
 }
 
 .btnContainer {
@@ -61,22 +87,21 @@ footer {
     display: block;
     border-radius:20px;
     width:100px;
-    height:100px;
+    height:60px;
     outline:none;
     top:50%;
     right:50%;
     margin-right:-50px;
     position:absolute;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
     background-color:white;
+    font-style: italic;
 }
 
 .enterBtn:hover {
     transform:scale(0.8);
     box-shadow:none;
-    transition-duration: 500ms;
+    transition-duration: 400ms;
 }
 
 .slides {
