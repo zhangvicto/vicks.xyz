@@ -7,7 +7,7 @@ function btnAction (){
     //reveal new page
     document.getElementById("main").style.display = "block";
     document.getElementById("btn1").style.display = "none";
-    document.getElementById("front").style.display = "none";
+    document.getElementById("content").style.display = "none";
 }
 
 //key pressed action
