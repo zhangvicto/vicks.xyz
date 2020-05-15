@@ -13,7 +13,7 @@ body {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     text-align: center;
     width:100%;
     bottom:0;
@@ -45,14 +45,18 @@ footer {
 }
 
 
+.topbar {
+        overflow: hidden;
+}
+
 .loc {
         position: absolute;
         right:0;
-        padding:30px;
+        padding:3%;
 }
 
 .intro {
-        position:fixed;
+        position:relative;
         margin:auto;
         top:50%;
         margin-top:-160px;
@@ -65,10 +69,8 @@ footer {
 }
 
 .profile {
-        left:20%;
         position: relative;
         top:83px;
-        margin-left:38px;
     border-radius:80px;
     width:120px;
     height:120px;
@@ -79,7 +81,6 @@ footer {
 
 .profileBorder {
         position: relative;
-        left:20%;
         top:25px;
         border-radius:85px;
         width:135px;
@@ -97,11 +98,13 @@ footer {
         padding:25px;
         padding-left:40px;
         margin-left: 40%;
+        overflow: hidden;
 }
 
 .menubar {
         height:100%;
         width:100%;
+        overflow: hidden;
 }
 
 .menu {
