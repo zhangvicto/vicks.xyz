@@ -79,10 +79,12 @@ footer {
 
 .caption {
         position: relative;
-        width:40%;
+        width:30%;
         display:inline-block;
         height:100%;
-        margin:auto;
+        padding:25px;
+        padding-left:40px;
+        margin-left: 40%;
 }
 
 .menu {
@@ -125,6 +127,7 @@ footer {
 
 .enterBtn {
     padding: 15px;
+    margin:0;
     border: none;
     border-radius:20px;
     height:60px;
@@ -134,7 +137,8 @@ footer {
     font-style: italic;
     cursor:pointer;
     pointer-events: auto;
-    top:50%;
+    position: relative;
+    top:60%;
     animation-name: btnOut;
     transition-duration: 400ms;
 }
