@@ -71,7 +71,7 @@ footer {
 .profile {
         position: absolute;
         margin-left:7.5px;
-        left:20%;
+        left:27%;
         margin-top: -117.5px;
     border-radius:65px;
     display: inline-block;
@@ -86,12 +86,12 @@ footer {
 .profileBorder {
         margin-top:-15px;
         position:relative;
-        left:20%;
+        left:27%;
         border-radius:70px;
         width:125px;
-    height:125px;
-    background: linear-gradient(to left, #dd5e89, #f7bb97);
-    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+        height:125px;
+        background: linear-gradient(to left, #dd5e89, #f7bb97);
+        box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
 }
 
 .caption {
@@ -99,11 +99,16 @@ footer {
         font-size: 15px;
         width:26%;
         display:inline-block;
-        height:100%;
-        padding:25px;
+        height:200px;
+        top:50%;
+        margin-top: -100px;
         padding-left:40px;
         left: 42%;
         overflow: hidden;
+}
+
+.extraInfo {
+        display:block;
 }
 
 .enterBtn {
@@ -111,16 +116,17 @@ footer {
         border: none;
         border-radius:20px;
         height:60px;
+        width:100px;
         outline:none;
         box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
         background-color:white;
         font-style: italic;
         cursor:pointer;
         pointer-events: auto;
-        position: fixed;
+        position: relative;
         top:65%;
-        left:20%;
-        margin-left:41.35px;
+        left:31%;
+        margin-left:-2%;
         transition-duration: 400ms;
         display:flex;
     }
@@ -130,6 +136,90 @@ footer {
         box-shadow:none;
         transition-duration: 400ms;
 }
+
+/* mobile for profile */
+
+@media only screen and (max-width: 1000px) {
+        .profile {
+                left:25%;
+        }
+        
+        .profileBorder {
+                left:25%;
+        }
+
+      }
+
+@media only screen and (max-width: 720px) {
+        .profile {
+                position: fixed;
+                left:20%;
+        }
+        
+        .profileBorder {
+                position:relative;
+                left:20%;
+        }
+
+        .extraInfo {
+                display: none;
+        }
+
+        .enterBtn {
+                left:40%;
+        }
+      }
+
+@media only screen and (max-width: 550px) {
+        .profile {
+                position: fixed;
+                left:10%;
+        }
+        
+        .profileBorder {
+                position:relative;
+                left:10%;
+        }
+
+        .extraInfo {
+                display: none;
+        }
+
+        .enterBtn {
+                left:20%;
+        }
+
+        .caption {
+                left:38%;
+                width:25%;
+        }
+      }
+
+@media only screen and (max-width: 400px) {
+        .profile {
+                position: fixed;
+                left:-20px;
+        }
+        
+        .profileBorder {
+                position:relative;
+                left:-20px;
+        }
+
+        .extraInfo {
+                display: none;
+        }
+
+        .enterBtn {
+                left:50px;
+        }
+        .caption {
+                left:30%;
+                width:25%;
+        }
+      }
+
+
 
 .menubar {
         height:100%;
