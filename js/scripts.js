@@ -8,9 +8,15 @@ function btnAction (){
     //show loading page 
     document.getElementById('loading').style.display ="block";
 
-    //fading animation
+    //fading animation setup
     document.getElementById('loading').style.opacity = 1;
     document.getElementById('loading').style.transition = "opacity 2s";
+
+    //start progress bar and change the text 
+    move();
+
+    //hide the load page
+    hideLoad();
 
     //reveal new page
     document.getElementById("main").style.display = "block";
@@ -33,6 +39,29 @@ function btnAction (){
      setTimeout(function() {document.getElementById('loading').style.opacity = 0;}, 2000);
      setTimeout(function() {document.getElementById('loading').style.display ="none";}, 4000);
     }
+
+//simple loading bar animation
+let width = 0;
+let ii = 0;
+function move() {
+  if (ii == 0) {
+    ii = 1;
+    var elem = document.getElementById("bar");
+    var width = 1;
+    var id = setInterval(frame, 20);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        ii = 0;
+      } else {
+        
+        width++;
+        elem.style.width = width + "%";
+        document.getElementById('bartext').innerHTML = width + "%";
+      }
+    }
+  }
+}
 
 
 //key pressed action

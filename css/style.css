@@ -100,7 +100,7 @@ footer {
         font-size: 15px;
         width:26%;
         display:inline-block;
-        height:200px;
+        height:210px;
         top:50%;
         margin-top: -100px;
         padding-left:40px;
@@ -149,7 +149,7 @@ footer {
         }
         .enterBtn {
                 position:relative;
-                left:26%;
+                left:27%;
         }
 
       }
@@ -170,7 +170,7 @@ footer {
 
         .enterBtn {
                 position:relative;
-                left:40%;
+                left:27%;
                 margin-left:-2%;
         }
       }
@@ -316,7 +316,15 @@ footer {
 .loading {
         position: relative;
         top:50%;
+        left:50%;
         margin-top:-20px;
+        margin-left: -10%;;
+        width:20%;
+}
+
+.loadingbar {
+        background-image:linear-gradient(to left, #dd5e89, #f7bb97);
+        border-radius: 50px;
 }
 
 .wrapper {
