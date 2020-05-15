@@ -43,7 +43,15 @@ footer {
     background-image: linear-gradient(to bottom, #d9a7c7, #fffcdc);
 }
 
+
+.loc {
+        position: absolute;
+        right:0;
+        padding:30px;
+}
+
 .intro {
+        position:fixed;
         margin:auto;
         top:30%;
     width:100%;
@@ -54,7 +62,7 @@ footer {
 }
 
 .profile {
-        right:20%;
+        right:25%;
         position: relative;
     display: inline-block;
     border-radius:80px;
@@ -67,7 +75,7 @@ footer {
 
 .profileBorder {
         position: relative;
-        right:20%;
+        right:25%;
         display:inline-block;
         border-radius:85px;
         width:135px;
@@ -141,6 +149,8 @@ footer {
     top:60%;
     animation-name: btnOut;
     transition-duration: 400ms;
+    display:flex;
+    left:52%;
 }
 
 .enterBtn:hover {
@@ -158,6 +168,7 @@ footer {
         position: fixed;
         background-color: white;
         z-index: 20;
+        transition-duration: 500ms;
 }
 
 .loading {

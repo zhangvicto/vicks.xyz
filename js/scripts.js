@@ -8,8 +8,14 @@ function btnAction (){
     //show loading page 
     document.getElementById('loading').style.display ="block";
 
-    //countdown to hide loading page while page 2 loads
-    setTimeout(function() {document.getElementById('loading').style.display ="none";}, 2000);
+    //fading animation
+    document.getElementById('loading').style.opacity = 1;
+    document.getElementById('loading').style.transition = "opacity 2s";
+
+    //countdown to fade out loading page while page 2 loads
+    setTimeout(function() {document.getElementById('loading').style.opacity = 0;}, 2000);
+    
+
 
     //reveal new page
     document.getElementById("main").style.display = "block";
