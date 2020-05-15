@@ -53,8 +53,10 @@ footer {
 .intro {
         position:fixed;
         margin:auto;
-        top:30%;
+        top:50%;
+        margin-top:-160px;
     width:100%;
+    height:180px;
     background-color: white;
     background-position: center;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
@@ -75,8 +77,8 @@ footer {
 
 .profileBorder {
         position: relative;
-        right:25%;
-        display:inline-block;
+        left:20%;
+        top:25px;
         border-radius:85px;
         width:135px;
     height:135px;
@@ -93,6 +95,11 @@ footer {
         padding:25px;
         padding-left:40px;
         margin-left: 40%;
+}
+
+.menubar {
+        height:100%;
+        width:100%;
 }
 
 .menu {
@@ -112,6 +119,7 @@ footer {
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
     background-image:linear-gradient(45deg, rgba(49,195,255,1) 0%, rgba(152,234,221,1) 68%, rgba(255,255,255,1) 100%);
     transition-duration: 400ms;
+    z-index: 2;
 }
 
 .menu:hover {
