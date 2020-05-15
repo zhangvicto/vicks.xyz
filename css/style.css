@@ -64,9 +64,10 @@ footer {
 }
 
 .profile {
-        right:25%;
+        left:20%;
         position: relative;
-    display: inline-block;
+        top:82px;
+        margin-left:38px;
     border-radius:80px;
     width:120px;
     height:120px;
