@@ -1,10 +1,7 @@
-//slidimation
-let slider = document.getElementById('slider'),
+var slider = document.getElementById('slider'),
     sliderItems = document.getElementById('slides'),
     prev = document.getElementById('prev'),
     next = document.getElementById('next');
-
-slide(slider,sliderItems,prev,next);
 
 function slide(wrapper, items, prev, next) {
   var posX1 = 0,
@@ -36,8 +33,8 @@ function slide(wrapper, items, prev, next) {
   items.addEventListener('touchmove', dragAction);
   
   // Click events
-  prev.addEventListener('click', function () { shiftSlide(-1) });
-  next.addEventListener('click', function () { shiftSlide(1) });
+  prev.addEventListener('click', function () { shiftSlide(-1); });
+  next.addEventListener('click', function () { shiftSlide(1); });
   
   // Transition events
   items.addEventListener('transitionend', checkIndex);
@@ -96,7 +93,7 @@ function slide(wrapper, items, prev, next) {
         items.style.left = (posInitial + slideSize) + "px";
         index--;      
       }
-    };
+    }
     
     allowShift = false;
   }
@@ -119,8 +116,3 @@ function slide(wrapper, items, prev, next) {
 }
 
 slide(slider, sliderItems, prev, next);
-
-function timing() {
-    setInterval(5000);
-
-}

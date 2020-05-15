@@ -194,21 +194,6 @@ footer {
         margin-top:-20px;
 }
 
-.slides {
-    top:0;
-    display:flex;
-    position:relative; 
-    width:10000px;
-    left:-100%;
-}
-
-.slide {
-    margin-right:200px;
-    width:1536px;
-    display: flex;
-    height:100%;
-}
-
 .wrapper {
     width:100%;
     height:100%;
@@ -218,6 +203,29 @@ footer {
     background-size: 2000px;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+
+.slides {
+    top:0;
+    display:flex;
+    position:relative; 
+    width:10000px;
+    left:-400px;
+}
+
+.slides.shifting {
+        transition: left .2s ease-out;
+      }
+.slide {
+    margin-right:200px;
+    width:400px;
+    display: flex;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
 }
 
 .control {
@@ -255,12 +263,11 @@ footer {
 }
 
 .billboard {
-    margin:0;
     height:600px;
-    bottom:12px;
     left:35%;
-    position: fixed;
+    position: absolute;
     pointer-events: none;
+    margin-top:110px;
 }
 
 .pic {
