@@ -126,8 +126,7 @@ footer {
         pointer-events: auto;
         position: relative;
         top:65%;
-        left:31%;
-        margin-left:-2%;
+        left:30%;
         transition-duration: 400ms;
         display:flex;
     }
@@ -150,7 +149,7 @@ footer {
         }
         .enterBtn {
                 position:relative;
-                left:29%;
+                left:26%;
         }
 
       }
@@ -172,6 +171,7 @@ footer {
         .enterBtn {
                 position:relative;
                 left:40%;
+                margin-left:-2%;
         }
       }
 
@@ -192,6 +192,7 @@ footer {
         .enterBtn {
                 position:relative;
                 left:15%;
+                margin-left:-2%;
         }
 
         .caption {
@@ -218,6 +219,7 @@ footer {
         .enterBtn {
                 position:relative;
                 left:50px;
+                margin-left:-2%;
         }
         .caption {
                 position:relative;
