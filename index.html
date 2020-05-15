@@ -7,41 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/scripts.js" async></script>
     <script type="text/javascript" src="js/slide.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pangolin&display=swap" rel="stylesheet">
 </head>
 
 
 <body id="userInput">
-
-    <ul class="menu">
-        <li><a href="mailto:vzhang24@uwo.ca"><img src=/img/mail.png height=30px></a></li>
-        <li><a href="https://www.instagram.com/vicksdev/"><img src=/img/instagram.png height=30px></a></li>
-        <li><a href="https://www.linkedin.com/in/victor-zhang-9a1510146/"><img src=/img/linkedin.png height=30px></a>
-        </li>
-    </ul>
-
-    <div id="content">
-        <div id="front" class="btnContainer">
+    <div data-relative-input="true" id="content">
+        <div id="front" class="btnContainer" data-depth="0.1">
             <button id="btn1" class="enterBtn" onclick="btnAction()">Press Enter!</button>
+            <!-- temporary -->
+            <a data-depth="2" href="https://drive.google.com/open?id=1xCR3VCsUP-En_yr53pE8gzlkTrcN-p86"> Temporary
+                Respository
+                for
+                projects as pages are under construction.</a>
+        </div>
 
-            <a href="https://drive.google.com/open?id=1xCR3VCsUP-En_yr53pE8gzlkTrcN-p86"> Temporary Respository for projects as pages are under construction.</a>
-        
-            <div class="intro">
-                <div class="profile"></div>
-                <span>
-                    - Hi, welcome to my website! I'm a 1st-year uni student going into Mechatronics at UWO. -
-                </span>
-            </div>
+        <div class="intro" data-depth="0.3">
+            <div class="profile"></div>
+            <span>
+                - Hi, welcome to my website! I'm a 1st-year uni student going into Mechatronics at UWO. -
+            </span>
+        </div>
+
+        <div class="menubar">
+            <ul class="menu">
+                <li><a href="mailto:vzhang24@uwo.ca"><img src=/img/email.png height=30px></a></li>
+                <li><a href="https://www.instagram.com/vicksdev/"><img src=/img/ig.png height=30px></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/victor-zhang-9a1510146/"><img src=/img/linkedin2.png
+                            height=30px></a></li>
+            </ul>
         </div>
     </div>
 
 
 
+    <div id="main" data-relative-input="true">
 
-    <div id="main">
-
-
+        <!-- gallery for first pics -->
         <div class="gallery" id="gallery">
 
             <img src="">
@@ -113,11 +118,19 @@
         </div>
 
     </div>
+
+    <!-- parallax declare code block-->
+    <script>
+        var scene = document.getElementById('content');
+        var parallax = new Parallax(scene, { relativeInput: true });
+
+    </script>
+
 </body>
 
 
 <footer id="foot">
-    <div style="padding:10px;"> Vicks<strong>Dev</strong> 2020 <strong><a href="mailto:vzhang24@uwo.ca"
+    <div> Vicks<strong>Dev</strong> 2020 <strong><a href="mailto:vzhang24@uwo.ca"
                 style="text-decoration: none;color:white;">Contact</a></strong>
     </div>
 </footer>
