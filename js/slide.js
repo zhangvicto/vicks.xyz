@@ -25,7 +25,7 @@ function slide(wrapper, items, prev, next) {
   // Clone first and last slide
   items.appendChild(cloneFirst);
   items.insertBefore(cloneLast, firstSlide);
-  wrapper.classList.add('loaded');
+  //wrapper.classList.add('loaded');
   
   // Mouse events
   items.onmousedown = dragStart;

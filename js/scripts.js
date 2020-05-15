@@ -1,5 +1,5 @@
 //changing title as enter is pressed
-var input = document.getElementById("userInput");
+let input = document.getElementById("userInput");
 function btnAction (){
 
     //change title
@@ -14,7 +14,7 @@ function btnAction (){
 
     //countdown to fade out loading page while page 2 loads
     setTimeout(function() {document.getElementById('loading').style.opacity = 0;}, 2000);
-
+    setTimeout(function() {document.getElementById('loading').style.display ="none";}, 4000);
     //reveal new page
     document.getElementById("main").style.display = "block";
     document.getElementById("btn1").style.display = "none";
@@ -28,10 +28,6 @@ function btnAction (){
 
     //disable parallax running in background
     parallax.disable();
-
-    //create new parallax for main
-    var scene2 = document.getElementById('main');
-    var parallax2 = new Parallax(scene2, {relativeInput:true});
 
 }
 
