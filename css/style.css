@@ -22,6 +22,7 @@ footer {
     display:block;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
     padding:10px;
+    overflow: hidden;
 }
 
 #main {
