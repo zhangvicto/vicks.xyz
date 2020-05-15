@@ -44,8 +44,8 @@ footer {
 }
 
 .intro {
-        top:20%;
-        height:auto;
+        margin:auto;
+        top:30%;
     width:100%;
     background-color: white;
     background-position: center;
@@ -54,17 +54,20 @@ footer {
 }
 
 .profile {
+        right:20%;
         position: relative;
     display: inline-block;
     border-radius:80px;
     width:120px;
     height:120px;
-    background-image: url(/img/profile.png);
+    background-image: url(/img/profile2.png);
     background-position: center;
     background-size:cover;
 }
 
 .profileBorder {
+        position: relative;
+        right:20%;
         display:inline-block;
         border-radius:85px;
         width:135px;
@@ -75,16 +78,12 @@ footer {
 }
 
 .caption {
+        position: relative;
         width:40%;
         display:inline-block;
         height:100%;
         margin:auto;
 }
-
-.menubar {
-        height:100%;
-}
-
 
 .menu {
     list-style:none;
@@ -102,6 +101,12 @@ footer {
     margin-top:-93.4px; /* aligned with including the footer */
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
     background-image:linear-gradient(45deg, rgba(49,195,255,1) 0%, rgba(152,234,221,1) 68%, rgba(255,255,255,1) 100%);
+    transition-duration: 400ms;
+}
+
+.menu:hover {
+        transform:scale(1.2);
+        transition-duration: 400ms;
 }
 
 .menu li {
@@ -109,6 +114,7 @@ footer {
         padding-top: 2.5px;
         padding-bottom: 2.5px;
         filter:drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+        transition-duration: 400ms;
 }
         
 .menu li:hover {
@@ -129,12 +135,31 @@ footer {
     cursor:pointer;
     pointer-events: auto;
     top:50%;
+    animation-name: btnOut;
+    transition-duration: 400ms;
 }
 
 .enterBtn:hover {
     transform:scale(0.8);
     box-shadow:none;
     transition-duration: 400ms;
+}
+
+#loading {
+        display:none;
+        height:100%;
+        width:100%;
+        top:0;
+        text-align: center;
+        position: fixed;
+        background-color: white;
+        z-index: 20;
+}
+
+.loading {
+        position: relative;
+        top:50%;
+        margin-top:-20px;
 }
 
 .slides {

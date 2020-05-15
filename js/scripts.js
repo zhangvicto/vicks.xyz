@@ -5,6 +5,12 @@ function btnAction (){
     //change title
     document.title = "Victor Zhang";
 
+    //show loading page 
+    document.getElementById('loading').style.display ="block";
+
+    //countdown to hide loading page while page 2 loads
+    setTimeout(function() {document.getElementById('loading').style.display ="none";}, 2000);
+
     //reveal new page
     document.getElementById("main").style.display = "block";
     document.getElementById("btn1").style.display = "none";
