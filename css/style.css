@@ -150,7 +150,7 @@ footer {
         }
         .enterBtn {
                 position:relative;
-                left:28%;
+                left:29%;
         }
 
       }
@@ -435,7 +435,7 @@ footer {
 /* text bubble */
 .speech-bubble {
     color:black;
-	position: fixed;
+    position: fixed;
     background: white;
     border: 5px 5px 5px 5px;
     border-radius: .4em;
