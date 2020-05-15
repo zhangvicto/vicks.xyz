@@ -20,7 +20,7 @@ function btnAction (){
     document.getElementById('foot').style.borderTop = "2px solid white";
 
     //add contact to footer
-    document.getElementById('foot').innerHTML = "Vicks<strong>DEV </strong> 2020 &nbsp;&nbsp<strong><a href='mailto:vzhang24@uwo.ca' style='text-decoration: none;color:white;'>Contact</a></strong>";
+    document.getElementById('foot').innerHTML = "Vicks<strong>DEV </strong> 2020 &nbsp;&nbsp<strong><a href='/' style='text-decoration: none;color:white;'>Home</a></strong>";
 
     //disable parallax running in background
     parallax.disable();
