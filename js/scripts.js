@@ -12,9 +12,6 @@ function btnAction (){
     document.getElementById('loading').style.opacity = 1;
     document.getElementById('loading').style.transition = "opacity 2s";
 
-    //countdown to fade out loading page while page 2 loads
-    setTimeout(function() {document.getElementById('loading').style.opacity = 0;}, 2000);
-    setTimeout(function() {document.getElementById('loading').style.display ="none";}, 4000);
     //reveal new page
     document.getElementById("main").style.display = "block";
     document.getElementById("btn1").style.display = "none";
@@ -30,6 +27,13 @@ function btnAction (){
     parallax.disable();
 
 }
+
+ //countdown to fade out loading page while page 2 loads
+ function hideLoad() {
+     setTimeout(function() {document.getElementById('loading').style.opacity = 0;}, 2000);
+     setTimeout(function() {document.getElementById('loading').style.display ="none";}, 4000);
+    }
+
 
 //key pressed action
 input.addEventListener("keydown",function(press){
