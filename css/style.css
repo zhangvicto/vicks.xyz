@@ -152,7 +152,7 @@ footer {
 
 @media only screen and (max-width: 720px) {
         .profile {
-                position: fixed;
+                position:relative;
                 left:20%;
         }
         
@@ -166,13 +166,14 @@ footer {
         }
 
         .enterBtn {
+                position:relative;
                 left:40%;
         }
       }
 
 @media only screen and (max-width: 550px) {
         .profile {
-                position: fixed;
+                position:relative;
                 left:10%;
         }
         
@@ -186,10 +187,12 @@ footer {
         }
 
         .enterBtn {
+                position:relative;
                 left:20%;
         }
 
         .caption {
+                position:relative;
                 left:38%;
                 width:25%;
         }
@@ -197,7 +200,7 @@ footer {
 
 @media only screen and (max-width: 400px) {
         .profile {
-                position: fixed;
+                position:relative;
                 left:-20px;
         }
         
@@ -211,9 +214,11 @@ footer {
         }
 
         .enterBtn {
+                position:relative;
                 left:50px;
         }
         .caption {
+                position:relative;
                 left:30%;
                 width:25%;
         }
