@@ -52,7 +52,8 @@ footer {
 .loc {
         position: absolute;
         right:0;
-        padding:3%;
+        padding:2.5%;
+        font-size: 2vh;
 }
 
 .intro {
@@ -141,11 +142,15 @@ footer {
 
 @media only screen and (max-width: 1000px) {
         .profile {
-                left:25%;
+                left:23%;
         }
         
         .profileBorder {
-                left:25%;
+                left:23%;
+        }
+        .enterBtn {
+                position:relative;
+                left:28%;
         }
 
       }
@@ -172,12 +177,12 @@ footer {
 
 @media only screen and (max-width: 550px) {
         .profile {
-                left:10%;
+                left:5%;
         }
         
         .profileBorder {
                 position:relative;
-                left:10%;
+                left:5%;
         }
 
         .extraInfo {
@@ -186,7 +191,7 @@ footer {
 
         .enterBtn {
                 position:relative;
-                left:20%;
+                left:15%;
         }
 
         .caption {
@@ -221,6 +226,32 @@ footer {
         }
       }
 
+
+@media only screen and (max-width: 270px) {
+        .profile {
+                left:-20px;
+        }
+        
+        .profileBorder {
+                position:relative;
+                left:-20px;
+        }
+
+        .extraInfo {
+                display: none;
+        }
+
+        .enterBtn {
+                position:relative;
+                left:50px;
+        }
+        .caption {
+                position:relative;
+                left:30%;
+                width:25%;
+                display:none;
+        }
+      }
 
 
 .menubar {
