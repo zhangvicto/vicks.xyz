@@ -69,36 +69,66 @@ footer {
 }
 
 .profile {
-        position: relative;
-        top:83px;
-    border-radius:80px;
-    width:120px;
-    height:120px;
+        position: absolute;
+        margin-left:7.5px;
+        left:20%;
+        margin-top: -117.5px;
+    border-radius:65px;
+    display: inline-block;
+    width:110px;
+    height:110px;
     background-image: url(/img/profile2.png);
     background-position: center;
     background-size:cover;
+    filter:drop-shadow(1px 1px 10px rgba(0,0,0,0.3))
 }
 
 .profileBorder {
-        position: relative;
-        top:25px;
-        border-radius:85px;
-        width:135px;
-    height:135px;
+        margin-top:-15px;
+        position:relative;
+        left:20%;
+        border-radius:70px;
+        width:125px;
+    height:125px;
     background: linear-gradient(to left, #dd5e89, #f7bb97);
     box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
-    z-index: -1;
 }
 
 .caption {
         position: relative;
-        width:30%;
+        font-size: 15px;
+        width:26%;
         display:inline-block;
         height:100%;
         padding:25px;
         padding-left:40px;
-        margin-left: 40%;
+        left: 42%;
         overflow: hidden;
+}
+
+.enterBtn {
+        padding: 15px;
+        border: none;
+        border-radius:20px;
+        height:60px;
+        outline:none;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+        background-color:white;
+        font-style: italic;
+        cursor:pointer;
+        pointer-events: auto;
+        position: fixed;
+        top:65%;
+        left:20%;
+        margin-left:41.35px;
+        transition-duration: 400ms;
+        display:flex;
+    }
+    
+.enterBtn:hover {
+        transform:scale(0.8);
+        box-shadow:none;
+        transition-duration: 400ms;
 }
 
 .menubar {
@@ -144,32 +174,6 @@ footer {
     transform: scale(1.1);
     transition-duration: 350ms;
     filter:drop-shadow(-1px -1px 10px rgba(0,0,0,0.3));
-}
-
-.enterBtn {
-    padding: 15px;
-    margin:0;
-    border: none;
-    border-radius:20px;
-    height:60px;
-    outline:none;
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
-    background-color:white;
-    font-style: italic;
-    cursor:pointer;
-    pointer-events: auto;
-    position: relative;
-    top:60%;
-    animation-name: btnOut;
-    transition-duration: 400ms;
-    display:flex;
-    left:52%;
-}
-
-.enterBtn:hover {
-    transform:scale(0.8);
-    box-shadow:none;
-    transition-duration: 400ms;
 }
 
 #loading {

@@ -14,8 +14,6 @@ function btnAction (){
 
     //countdown to fade out loading page while page 2 loads
     setTimeout(function() {document.getElementById('loading').style.opacity = 0;}, 2000);
-    
-
 
     //reveal new page
     document.getElementById("main").style.display = "block";
@@ -32,8 +30,8 @@ function btnAction (){
     parallax.disable();
 
     //create new parallax for main
-    //var scene2 = document.getElementById('main');
-    //var parallax2 = new Parallax(scene2, {relativeInput:true});
+    var scene2 = document.getElementById('main');
+    var parallax2 = new Parallax(scene2, {relativeInput:true});
 
 }
 
