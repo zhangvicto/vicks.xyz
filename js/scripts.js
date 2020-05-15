@@ -14,15 +14,14 @@ function btnAction (){
     document.getElementById('foot').style.borderTop = "2px solid white";
 
     //add contact to footer
-    document.getElementById('foot').innerHTML = "<div style="padding:10px;"> Vicks<strong>Dev</strong> 2020 <strong><a href="mailto:vzhang24@uwo.ca"
-    style="text-decoration: none;color:white;">Contact</a></strong></div>";
+    document.getElementById('foot').innerHTML = "Vicks<strong>DEV </strong> 2020 &nbsp;&nbsp<strong><a href='mailto:vzhang24@uwo.ca' style='text-decoration: none;color:white;'>Contact</a></strong>";
 
     //disable parallax running in background
     parallax.disable();
 
     //create new parallax for main
-    var scene2 = document.getElementById('main');
-    var parallax2 = new Parallax(scene2, {relativeInput:true});
+    //var scene2 = document.getElementById('main');
+    //var parallax2 = new Parallax(scene2, {relativeInput:true});
 
 }
 

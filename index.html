@@ -14,21 +14,29 @@
 
 
 <body id="userInput">
-    <div data-relative-input="true" id="content">
-        <div id="front" class="btnContainer" data-depth="0.1">
-            <button id="btn1" class="enterBtn" onclick="btnAction()">Press Enter!</button>
-            <!-- temporary -->
+    <div id="content">
+
+        <!-- temporary 
             <a data-depth="2" href="https://drive.google.com/open?id=1xCR3VCsUP-En_yr53pE8gzlkTrcN-p86"> Temporary
                 Respository
                 for
                 projects as pages are under construction.</a>
-        </div>
+        -->
 
-        <div class="intro" data-depth="0.3">
-            <div class="profile"></div>
-            <span>
-                - Hi, welcome to my website! I'm a 1st-year uni student going into Mechatronics at UWO. -
-            </span>
+
+        <div id="parallax" class="intro" data-relative-input="true">
+            <div data-depth="0.2">
+                <div class="profile"></div>
+            </div>
+            <div data-depth="0.3" style="width:100%;text-align: center;">
+                <span style="width:50px">
+                    - Hi, welcome to my website! I'm a 1st-year uni student going into Mechatronics at UWO. -
+                </span>
+            </div>
+
+            <div data-depth="0.6" style="width:100%;"><button id="btn1" class="enterBtn" onclick="btnAction()">Press
+                    Enter!</button>
+            </div>
         </div>
 
         <div class="menubar">
@@ -44,7 +52,7 @@
 
 
 
-    <div id="main" data-relative-input="true">
+    <div id="main">
 
         <!-- gallery for first pics -->
         <div class="gallery" id="gallery">
@@ -121,7 +129,7 @@
 
     <!-- parallax declare code block-->
     <script>
-        var scene = document.getElementById('content');
+        var scene = document.getElementById('parallax');
         var parallax = new Parallax(scene, { relativeInput: true });
 
     </script>
@@ -130,8 +138,7 @@
 
 
 <footer id="foot">
-    <div> Vicks<strong>Dev</strong> 2020 <strong><a href="mailto:vzhang24@uwo.ca"
-                style="text-decoration: none;color:white;">Contact</a></strong>
+    <div> Vicks<strong>Dev</strong> 2020 <strong>
     </div>
 </footer>
 
