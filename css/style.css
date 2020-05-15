@@ -152,7 +152,6 @@ footer {
 
 @media only screen and (max-width: 720px) {
         .profile {
-                position:relative;
                 left:20%;
         }
         
@@ -173,7 +172,6 @@ footer {
 
 @media only screen and (max-width: 550px) {
         .profile {
-                position:relative;
                 left:10%;
         }
         
@@ -200,7 +198,6 @@ footer {
 
 @media only screen and (max-width: 400px) {
         .profile {
-                position:relative;
                 left:-20px;
         }
         
