@@ -5,15 +5,16 @@ function btnAction (){
     //change title
     document.title = "Victor Zhang";
 
-    //show loading page 
-    document.getElementById('loading').style.display ="block";
-
     //fading animation setup
     document.getElementById('loading').style.opacity = 1;
     document.getElementById('loading').style.transition = "opacity 2s";
 
+    //show loading page 
+    document.getElementById('loading').style.display ="block";
+    setTimeout(function() {document.getElementById('loading').style.opacity = 1;}, 1000);
+
     //start progress bar and change the text 
-    move();
+    setTimeout(move(),1000);
 
     //hide the load page
     hideLoad();
