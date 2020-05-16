@@ -100,7 +100,7 @@ footer {
         font-size: 15px;
         width:26%;
         display:inline-block;
-        height:210px;
+        height:200px;
         top:50%;
         margin-top: -100px;
         padding-left:40px;
@@ -341,27 +341,20 @@ footer {
 .slides {
     top:0;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     position:relative; 
-    width:600%;
+    widows: 10000px;
     height:100%;
 }
 
-.slides slide {
+#slides .slide {
     width:100%;
     height:100%;
     position: relative;
-    left: 100%;
 }
 
 .pic {
-        position: absolute;
     margin:0;
-    height:24%;
-    bottom:70%;
-    margin-bottom:-135px;
-    left: 50%;
-    margin-left: -28.5%;
 }
 
 

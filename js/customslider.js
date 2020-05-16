@@ -1,7 +1,6 @@
 let prev = document.getElementById('previous');
 let next = document.getElementById('nextup');
-let slideItems = document.getElementById('slides').getElementsByClassName('slide');
-console.log(slideItems);
+var slideItems = document.getElementById('slides').getElementsByClassName('slide');
 
 function shiftLeft() {
     for (i = 0; i < slideItems.length; i++) {
@@ -18,7 +17,7 @@ function shiftLeft() {
 function shiftRight() {
     for (let i = 0, len = slideItems.length; i < len; i++) {
         let index = slideItems[i].style.left;
-        slideItems[i].style.left = index - 100 + "%";
+        index = index - 100 + "%";
     }
 }
 
