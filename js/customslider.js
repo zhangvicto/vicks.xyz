@@ -1,18 +1,28 @@
-
+let prev = document.getElementById('previous');
+let next = document.getElementById('nextup');
+let slideItems = document.getElementById('slides').getElementsByClassName('slide');
+console.log(slideItems);
 
 function shiftLeft() {
-    console.log("wowowowowow");
+    for (i = 0; i < slideItems.length; i++) {
+        let index = slideItems[i].style.left;
+        console.log(index);
+        console.log(index.substr(0,3));
+        let result = parseFloat(index.substr(0,3))
+        console.log(result);
+        index = result + 100 + "%";
+        console.log(index);
+    }
 }
 
 function shiftRight() {
-    let x = 0;
-    x++;
-    console.log(x);
+    for (let i = 0, len = slideItems.length; i < len; i++) {
+        let index = slideItems[i].style.left;
+        slideItems[i].style.left = index - 100 + "%";
+    }
 }
 
-let sliderItems = document.getElementById('slides');
-let prev = document.getElementById('previous');
-let next = document.getElementById('nextup');
+next.addEventListener("click", function(){shiftRight();});
+prev.addEventListener("click", function(){shiftLeft();});
 
-next.addEventListener("click", shiftRight());
-prev.addEventListener("click", shiftLeft());
+//append new element to list

@@ -6,12 +6,12 @@ function btnAction (){
     document.title = "Victor Zhang";
 
     //fading animation setup
-    document.getElementById('loading').style.opacity = 1;
+    document.getElementById('loading').style.opacity = 0;
     document.getElementById('loading').style.transition = "opacity 2s";
 
     //show loading page 
     document.getElementById('loading').style.display ="block";
-    setTimeout(function() {document.getElementById('loading').style.opacity = 1;}, 1000);
+    document.getElementById('loading').style.opacity = 1;
 
     //start progress bar and change the text 
     setTimeout(move(),1000);
@@ -81,7 +81,7 @@ input.addEventListener("keydown",function(press){
 
 
 //hover on box to show animation and text change
-var box1 = document.getElementById("card1");
+let box1 = document.getElementById("card1");
 box1.addEventListener("mouseover",function(){
     document.getElementById("person").style.backgroundImage = "url(/img/person/1.png)";
     document.getElementById("text").innerHTML = "Made these back in '15. Low poly art based on real images.";
@@ -95,12 +95,13 @@ box1.addEventListener("mouseout",function(){
 box1.addEventListener("click",function(){
     document.getElementById("gallery").style.display = "block";
 })
-var exitGallery = document.getElementById("close");
+let exitGallery = document.getElementById("close");
 exitGallery = addEventListener("click", function(){
     document.getElementById("gallery").style.display = "none";
 })
 
-var box2 = document.getElementById("card2");
+
+let box2 = document.getElementById("card2");
 box2.addEventListener("mouseover",function(){
     document.getElementById("person").style.backgroundImage = "url(/img/person/1.png)";
     document.getElementById("text").innerHTML = "MasterMenu - a new solution to your food needs! (inProgress - Click to see)";
@@ -112,3 +113,37 @@ box2.addEventListener("mouseout",function(){
 }); 
 
 
+let box3 = document.getElementById("card3");
+box2.addEventListener("mouseover",function(){
+    document.getElementById("person").style.backgroundImage = "url(/img/person/1.png)";
+    document.getElementById("text").innerHTML = "Stuff for box 3!";
+}); 
+
+box3.addEventListener("mouseout",function(){
+    document.getElementById("person").style.backgroundImage = "url(/img/person5.gif)";
+    document.getElementById("text").innerHTML = "Next!";
+}); 
+
+
+let box4 = document.getElementById("card4");
+box4.addEventListener("mouseover",function(){
+    document.getElementById("person").style.backgroundImage = "url(/img/person/1.png)";
+    document.getElementById("text").innerHTML = "Stuff for box 4!";
+}); 
+
+box4.addEventListener("mouseout",function(){
+    document.getElementById("person").style.backgroundImage = "url(/img/person5.gif)";
+    document.getElementById("text").innerHTML = "Next!";
+}); 
+
+
+let box5 = document.getElementById("card5");
+box5.addEventListener("mouseover",function(){
+    document.getElementById("person").style.backgroundImage = "url(/img/person/1.png)";
+    document.getElementById("text").innerHTML = "Stuff for box 5!";
+}); 
+
+box5.addEventListener("mouseout",function(){
+    document.getElementById("person").style.backgroundImage = "url(/img/person5.gif)";
+    document.getElementById("text").innerHTML = "Next!";
+}); 
