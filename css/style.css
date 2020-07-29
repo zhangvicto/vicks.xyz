@@ -70,10 +70,9 @@ footer {
 }
 
 
-.profileBorder {
+.profile {
         margin-top:-15px;
         position:relative;
-        left:27%;
         border-radius:70px;
         width:125px;
         height:125px;
@@ -81,6 +80,13 @@ footer {
         background-position: center;
         background-size: cover;
         box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+        margin-bottom:15px;
+}
+
+.profileContainer {
+        display:absolute;
+        margin: auto;
+        width: 50%;
 }
 
 .caption {
@@ -100,6 +106,11 @@ footer {
         display:block;
 }
 
+.buttonContainer {
+        width:100%;
+        height:100%;
+}
+
 .enterBtn {
         padding: 15px;
         border: none;
@@ -112,11 +123,9 @@ footer {
         font-style: italic;
         cursor:pointer;
         pointer-events: auto;
-        position: relative;
-        top:65%;
-        left:30%;
         transition-duration: 400ms;
-        display:flex;
+        display:block;
+        margin-left:12.5px;
     }
     
 .enterBtn:hover {
@@ -128,120 +137,79 @@ footer {
 /* mobile for profile */
 
 @media only screen and (max-width: 1000px) {
-        .profile {
-                left:23%;
-        }
-        
-        .profileBorder {
-                left:23%;
-        }
-        .enterBtn {
-                position:relative;
-                left:27%;
-        }
 
-      }
+        .extraInfo {
+                display:block;
+        }
 
 @media only screen and (max-width: 720px) {
-        .profile {
-                left:20%;
-        }
-        
-        .profileBorder {
-                position:relative;
-                left:20%;
-        }
 
         .extraInfo {
                 display: none;
         }
-
-        .enterBtn {
-                position:relative;
-                left:27%;
-                margin-left:-2%;
-        }
-      }
 
 @media only screen and (max-width: 550px) {
-        .profile {
-                left:5%;
-        }
-        
-        .profileBorder {
-                position:relative;
-                left:5%;
-        }
 
         .extraInfo {
                 display: none;
         }
 
-        .enterBtn {
-                position:relative;
-                left:15%;
-                margin-left:-2%;
-        }
 
         .caption {
                 position:relative;
-                left:38%;
+                left:32%;
                 width:25%;
+        }
+
+        .profileContainer {
+                display:absolute;
+                margin: auto;
+                width: 50%;
+                padding-right:50%;
         }
       }
 
 @media only screen and (max-width: 400px) {
-        .profile {
-                left:-20px;
-        }
-        
-        .profileBorder {
-                position:relative;
-                left:-20px;
-        }
-
         .extraInfo {
                 display: none;
         }
 
-        .enterBtn {
-                position:relative;
-                left:50px;
-                margin-left:-2%;
-        }
         .caption {
                 position:relative;
-                left:30%;
+                left:32%;
                 width:25%;
+        }
+
+        .profileContainer {
+                display:absolute;
+                margin: auto;
+                width: 50%;
+                padding-right:60%;
         }
       }
 
 
 @media only screen and (max-width: 270px) {
-        .profile {
-                left:-20px;
-        }
-        
-        .profileBorder {
-                position:relative;
-                left:-20px;
-        }
-
         .extraInfo {
                 display: none;
         }
 
-        .enterBtn {
-                position:relative;
-                left:50px;
-        }
         .caption {
                 position:relative;
                 left:30%;
                 width:25%;
                 display:none;
         }
+
+        .profileContainer {
+                display:absolute;
+                margin: auto;
+                width: 50%;
+                padding-right:60%;
+        }
+
       }
+
 
 
 .menubar {
