@@ -136,17 +136,13 @@ footer {
 
 /* mobile for profile */
 
-@media only screen and (max-width: 1000px) {
-
-        .extraInfo {
-                display:block;
-        }
 
 @media only screen and (max-width: 720px) {
 
         .extraInfo {
                 display: none;
         }
+}
 
 @media only screen and (max-width: 550px) {
 
@@ -209,6 +205,7 @@ footer {
         }
 
       }
+
 
 
 
