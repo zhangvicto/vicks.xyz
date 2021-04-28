@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Victor Zhang</title>
+    <meta name="description" content="Victor personal website">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+
+</head>
+
+<body>
+    <!-- menu -->
+    <div class="menu-container" id="menu-container">
+        <ul class="menu-item" id="menu">
+            <li id="menu-about-me">About</li>
+            <li id="menu-robotics">Robotics</li>
+            <li id="menu-graphics">Graphics</li>
+            <li id="menu-web">Web</li>
+            <li id="menu-hobby">Hobby</li>
+            <li id="menu-cad">CAD</li>
+            <li id="menu-others">Others</li>
+        </ul>
+
+        <!-- hover bar -->
+        <div class="menu-hover" id="menu-hover">
+            <!-- bar and text -->
+            <div class="menu-bar-container">
+                <div class="menu-bar"></div> MENU
+            </div>
+        </div>
+    </div>
+
+    <!-- arrows -->
+    <div class="forward-arrow"><img src="image/forward.png" height="30px"></div>
+    <div class="backward-arrow"><img src="image/backward.png" height="30px"></div>
+
+    <!-- content -->
+    <div class="content-container" data-relative-input="true" id="scene">
+        <div data-depth="0.1" class="intro">
+            
+            Welcome!
+
+            <div class="intro-description">
+                I am a second year student studying Mechatronic Systems Engineering. 
+            </div>
+
+            <div>
+                Picture
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+
+    </script>
+
+    <!-- footer -->
+    <div class="footer-style">
+        <a href="https://github.com/zhangvicto"><img src="image/white_github.png" height=22px></a>
+        <a href=mailto:1zhangvic@gmail.com><img src="image/white_email.png" height=22px></a>
+        <a href=""><img src="image/white_linkedin.png" height=22px></a>
+        <br>
+        Portfolio Website by Victor Zhang
+
+    </div>
+
+
+</body>
+
+</html>

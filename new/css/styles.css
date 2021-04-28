@@ -1,0 +1,124 @@
+html {
+    padding:0;
+    margin:0;
+    font-family: "neue_montrealbold", sans-serif;
+}
+
+body {
+    padding:0;
+    margin:0;
+    font-family: "neue_montrealbold", sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #242d2e;
+    overflow-y: hidden;
+}
+
+.menu-container {
+    width:100%;
+    font-size: 14px;
+    height:50px;
+}
+
+.menu-item {
+    top:0;
+    width:490px;
+    display:none;
+    position: absolute;
+    /* Centering Absolute */
+    left: 50%; 
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.menu-container ul li{
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+} 
+
+.menu-hover {
+    position: absolute;
+    top:15px;
+    /* Centering Absolute */
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.menu-hover:hover {
+    cursor:grab;
+}
+
+.menu-bar-container {
+    width:150px;
+    font-size: 12px;  
+}
+
+.menu-bar {
+    margin: 0 auto;
+    height: 8px;
+    width: 60%;
+    background-color: white;
+    border-radius: 25px;
+    display:inline-block;
+    margin-right:10px;
+}
+
+.forward-arrow {
+    position: absolute;
+    top:50%;
+    right:0;
+}
+
+.backward-arrow {
+    position: absolute;
+    top:50%;
+    left:0;
+}
+
+.content-container {
+    position:absolute;
+    height:100%;
+}
+
+.intro {
+    position: absolute;
+    margin: 0 15vw;
+}
+
+.intro-description {
+    font-family: "neue_montreallight", sans-serif;
+}
+
+.footer-style {
+    font-size:8px;
+    font-family: "neue_montreallight", sans-serif;
+    text-align: center;
+    bottom:15px;
+    position: absolute;
+    display: block;
+    width:105px;
+    /* Centering Absolute */
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+a img {
+    margin: 0 4px;
+}
+
+a img:hover {
+    opacity: 0.8;
+}
