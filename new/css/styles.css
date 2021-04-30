@@ -2,6 +2,8 @@ html {
     padding:0;
     margin:0;
     font-family: "neue_montrealbold", sans-serif;
+    height:100%;
+
 }
 
 body {
@@ -11,13 +13,14 @@ body {
     font-size: 16px;
     color: white;
     background-color: #242d2e;
-    overflow-y: hidden;
 }
 
 .menu-container {
-    width:100%;
+    position: fixed;
+    width: 100%;
     font-size: 14px;
-    height:50px;
+    height: 50px;
+    z-index: 5;
 }
 
 .menu-item {
@@ -39,7 +42,12 @@ body {
     display: inline-block;
     text-align: center;
     padding: 0 10px;
-} 
+    cursor: pointer;
+}
+
+.menu-container ul li:hover{
+    color:#40e0d0;
+}
 
 .menu-hover {
     position: absolute;
@@ -73,29 +81,131 @@ body {
 }
 
 .forward-arrow {
-    position: absolute;
+    position: fixed;
     top:50%;
     right:0;
 }
 
 .backward-arrow {
-    position: absolute;
+    position: fixed;
     top:50%;
     left:0;
 }
 
 .content-container {
-    position:absolute;
-    height:100%;
+    width: 100vw;
+    position: fixed;
+    margin-right: 15vw;
+}
+
+.page {
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
 }
 
 .intro {
-    position: absolute;
-    margin: 0 15vw;
+    opacity: 1;
+    z-index: -1;
 }
 
 .intro-description {
+    margin: 0 15vw;
+}
+
+.profile-pic {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.28);
+    margin: auto;
+}
+
+.pentagon-box {
+    position: fixed;
+    top:50%;
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pentagon1 {
+    position: absolute;
+    filter: invert(71%) sepia(39%) saturate(638%) hue-rotate(123deg) brightness(99%) contrast(92%);
+    opacity: 0.6;
+    filter: drop-shadow(0px 0px 39px 22px rgba(64,224,208,0.69));
+
+    top:50%;
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pentagon2 {
+    position: absolute;
+    filter: invert(71%) sepia(39%) saturate(638%) hue-rotate(123deg) brightness(99%) contrast(92%);
+    opacity: 0.4;
+    filter: drop-shadow(0px 0px 39px 22px rgba(64,224,208,0.69));
+
+    top:50%;
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pentagon3 {
+    position: absolute;
+    filter: invert(71%) sepia(39%) saturate(638%) hue-rotate(123deg) brightness(99%) contrast(92%);
+    opacity: 0.2;
+
+    top:50%;
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.intro-description {
     font-family: "neue_montreallight", sans-serif;
+}
+.robotics {
+    background-color: aliceblue;
+    opacity: 0;
+}
+
+.graphics {
+    background-color: blue;
+    opacity: 0;
+}
+
+.web {
+    background-color: yellow;
+    opacity: 0;
+}
+
+.hobby {
+    background-color: red;
+    opacity: 0;
+}
+
+.cad {
+    background-color: tomato;
+    opacity: 0;
+}
+
+.others {
+    background-color: violet;
+    opacity: 0;
 }
 
 .footer-style {
@@ -103,7 +213,7 @@ body {
     font-family: "neue_montreallight", sans-serif;
     text-align: center;
     bottom:15px;
-    position: absolute;
+    position: fixed;
     display: block;
     width:105px;
     /* Centering Absolute */

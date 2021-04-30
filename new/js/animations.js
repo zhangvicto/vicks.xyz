@@ -47,3 +47,7 @@ function topMarginUp(element, dis, time, speed) {
         distance = parseInt(distance) - speed + "px";
     }, time);
 }
+
+function elementOpacity(element, display) {
+    element.opacity = display;
+}
