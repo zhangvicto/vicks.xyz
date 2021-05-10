@@ -8,6 +8,10 @@
     <title>Victor Zhang</title>
     <meta name="description" content="Victor personal website">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="font/stylesheet.css">
 </head>
@@ -22,7 +26,7 @@
             <li id="menu-web">Web</li>
             <li id="menu-hobby">Hobby</li>
             <li id="menu-cad">CAD</li>
-            <li id="menu-others">Others</li>
+            <li id="menu-others">Daily Log</li>
         </ul>
 
         <!-- hover bar -->
@@ -34,15 +38,33 @@
         </div>
     </div>
 
-    <!-- arrows -->
+    <!-- 
     <div class="forward-arrow"><img src="image/forward.png" height="30px"></div>
     <div class="backward-arrow"><img src="image/backward.png" height="30px"></div>
+    arrows -->
+
+    <!-- Notifications -->
+    <div class="note-1" id="note1">
+        <div class="close" onclick="fadeOut(note1)"></div>
+
+        <div class="note-text">
+            Welcome to my site! hover over the menu to discover some of my projects and blog. 
+        </div>
+    </div>
+
+    <div class="note-2" id="note2">
+        <div class="close" onclick="fadeOut(note2)"></div>
+        
+        <div class="note-text">
+             The radio chart displays my project goals (white) vs. my progress. 
+        </div>  
+    </div>
 
     <!-- content -->
     <div class="content-container">
 
         <!-- intro -->
-        <div class="page intro">
+        <div class="page intro" id="page-about">
 
             <div class="intro-description">
                 <!-- <span style="font-family: neue_montrealbold;">Welcome!</span>
@@ -55,46 +77,184 @@
             <!-- pic -->
 
 
-            <!-- pentagon -->
+            <!-- scraped -->
+            <!-- pentagon 
             <div class="pentagon-box">
-                <img class="pentagon1" src="image/Regular_pentagon.svg" height="250px">
-                <img class="pentagon2" src="image/Regular_pentagon.svg" height="170px">
-                <img class="pentagon3" src="image/Regular_pentagon.svg" height="80px">
+                <img class="pentagon1" src="image/Regular_pentagon.svg">
+                <img class="pentagon2" src="image/Regular_pentagon.svg">
+                <img class="pentagon3" src="image/Regular_pentagon.svg">
             </div>
+            -->
+            <div class="radar-container">
+                <div id="microservices"></div>
+                <script src="./js/radar/radar.js"></script>
+                <script>
+                    radar.show('#microservices', {
+                        size: 700,
+                        curve: true,
+                        metrics: [
+                            {
+                                name: "Robotics",
+                                range: [
+                                    "0",
+                                    "1",
+                                    "2",
+                                    "3"
+                                ],
+                                target: 3,
+                                actual: 0
+                            },
+                            {
+                                name: "Web Dev",
+                                range: [
+                                    "Value 0",
+                                    "Value 1",
+                                    "Value 2",
+                                    "Value 3"
+                                ],
+                                target: 3,
+                                actual: 1
+                            },
+                            {
+                                name: "Graphic Design",
+                                range: [
+                                    "Value 0",
+                                    "Value 1",
+                                    "Value 2",
+                                    "Value 3"
+                                ],
+                                target: 2,
+                                actual: 0
+                            },
+                            {
+                                name: "CAD",
+                                range: [
+                                    "Value 0",
+                                    "Value 1",
+                                    "Value 2",
+                                    "Value 3"
+                                ],
+                                target: 3,
+                                actual: 2
+                            },
+                            {
+                                name: "Hobby",
+                                range: [
+                                    "Value 0",
+                                    "Value 1",
+                                    "Value 2",
+                                    "Value 3"
+                                ],
+                                target: 0,
+                                actual: 0
+                            }
+                        ]
+                    });
+                </script>
+            </div>
+
+
         </div>
 
         <!-- robotics -->
-        <div class="page robotics">
-            Current Projects
+        <div class="page robotics" id="page-robotics">
+
+            <div class="page-title">Projects - Click for More Info</div>
+            <div class="robotics-card-container">
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="showCard(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+            </div>
+
+            <!-- Project Description -->
+            <div class="page-content" id="project-content">Project Description
+
+                <div id="quadruped">
+                    <img src="./image/robotics/dog.png" class="page-content-image">
+                    Github Repo:
+                    <br>
+                    Progress Bar
+                </div>
+
+
+
+
+            </div>
+
 
         </div>
 
         <!-- graphics -->
-        <div class="page graphics">
-            Current Projects
+        <div class="page graphics" id="page-graphics">
+            <div class="page-title">Projects</div>
 
         </div>
 
         <!-- web -->
-        <div class="page web">
+        <div class="page web" id="page-web">
             Current Projects
 
         </div>
 
         <!-- hobby -->
-        <div class="page hobby">
+        <div class="page hobby" id="page-hobby">
             Current Projects
 
         </div>
 
         <!-- cad -->
-        <div class="page cad">
+        <div class="page cad" id="page-cad">
             Current Projects
 
         </div>
 
         <!-- others -->
-        <div class="page others">
+        <div class="page others" id="page-others">
             Current Projects
 
         </div>
@@ -104,13 +264,13 @@
 
 
     <!-- Scripts -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" async></script>
     <script src="js/animations.js"></script>
 
     <!-- footer -->
     <div class="footer-style">
         <a href="https://github.com/zhangvicto"><img src="image/white_github.png" height=22px></a>
-        <a href= mailto:1zhangvic@gmail.com><img src="image/white_email.png" height=22px></a>
+        <a href=mailto:1zhangvic@gmail.com><img src="image/white_email.png" height=22px></a>
         <a href=""><img src="image/white_linkedin.png" height=22px></a>
         <br>
         Portfolio Website by Victor Zhang
