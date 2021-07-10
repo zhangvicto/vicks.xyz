@@ -1,176 +1,255 @@
-<!DOCTYPE html>
-<!-- website starts here -->
-<html>
+<!doctype html>
+
+<html lang="en">
 
 <head>
-    <title>Welcome</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+ 
+    <title>Victor Zhang</title>
+    <meta name="description" content="Victor personal website">
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pangolin&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="js/parallax.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+
 </head>
 
+<body>
+    <!-- menu -->
+    <div class="menu-container" id="menu-container">
+        <ul class="menu-item" id="menu">
+            <li id="menu-about-me">About</li>
+            <li id="menu-robotics">Robotics</li>
+            <li id="menu-graphics">Graphics</li>
+            <li id="menu-web">Web</li>
+            <li id="menu-hobby">Hobby</li>
+            <li id="menu-cad">CAD</li>
+            <li id="menu-others">Me</li>
+        </ul>
 
-<body id="userInput">
-    <div id="content">
-        <!-- top bar -->
-        <div class="topbar">
-
-            <div class="loc"> <a
-                    href="https://www.google.com/search?q=oakville&oq=oakville&aqs=chrome..69i57j46j0l2j69i60j69i61j69i60l2.1674j1j9&sourceid=chrome&ie=UTF-8"
-                    style="text-decoration: none;color:white;;">Oakville, ON</a></div>
+        <!-- hover bar -->
+        <div class="menu-hover" id="menu-hover">
+            <!-- bar and text -->
+            <div class="menu-bar-container">
+                <div class="menu-bar"></div> MENU
+            </div>
         </div>
+    </div>
+
+    <!-- 
+    <div class="forward-arrow"><img src="image/forward.png" height="30px"></div>
+    <div class="backward-arrow"><img src="image/backward.png" height="30px"></div>
+    arrows -->
+
+    <!-- Notifications -->
+    <div class="note-1" id="note1">
+        <div class="close" onclick="fadeOut(note1)"></div>
+
+        <div class="note-text">
+            Welcome to my site! Hover over the menu to discover some of my projects and blog.
+        </div>
+    </div>
+
+    <div class="note-2" id="note2">
+        <div class="close" onclick="fadeOut(note2)"></div>
+
+        <div class="note-text">
+            The radio chart displays my project goals (white) vs. my progress.
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="content-container">
 
         <!-- intro -->
-        <div id="parallax" class="intro" data-relative-input="true">
-            
-        <div data-depth="0.11" > 
-            <div class="profileContainer">
-                <div class="profile"></div>
+        <div class="page intro" id="page-about">
 
-                <div class="buttonContainer">
-                <button id="btn1" class="enterBtn" onclick="btnAction()">Press Enter!</button>
+            <div class="intro-description">
+                <!-- <span style="font-family: neue_montrealbold;">Welcome!</span>
+                Ny name is <b>Victor</b> and I am a second year student studying Mechatronic Systems Engineering.
+                -->
+            </div>
+
+            <br>
+
+            <!-- pic -->
+
+
+            <!-- scraped -->
+            <!-- pentagon 
+            <div class="pentagon-box">
+                <img class="pentagon1" src="image/Regular_pentagon.svg">
+                <img class="pentagon2" src="image/Regular_pentagon.svg">
+                <img class="pentagon3" src="image/Regular_pentagon.svg">
+            </div>
+            -->
+            <div class="radar-container">
+                <div id="microservices"></div>
+                <script src="./js/radar/radar.js"></script>
+                <script>
+                    radar.show('#microservices', {
+                        size: 700,
+                        curve: true,
+                        metrics: [
+                            {
+                                name: "Robotics",
+                                range: [
+                                    "0",
+                                    "1",
+                                    "2",
+                                    "3"
+                                ],
+                                target: 3,
+                                actual: 0
+                            },
+                            {
+                                name: "Web Dev",
+                                range: [
+                                    "Value 0",
+                                    "Value 1",
+                                    "Value 2",
+                                    "Value 3"
+                                ],
+                                target: 3,
+                                actual: 1
+                            },
+                            {
+                                name: "Graphic Design",
+                                range: [
+                                    "Value 0",
+                                    "Value 1",
+                                    "Value 2",
+                                    "Value 3"
+                                ],
+                                target: 2,
+                                actual: 0
+                            },
+                            {
+                                name: "CAD",
+                                range: [
+                                    "Value 0",
+                                    "Value 1",
+                                    "Value 2",
+                                    "Value 3"
+                                ],
+                                target: 3,
+                                actual: 2
+                            },
+                            {
+                                name: "Hobby",
+                                range: [
+                                    "Value 0",
+                                    "Value 1",
+                                    "Value 2",
+                                    "Value 3"
+                                ],
+                                target: 0,
+                                actual: 0
+                            }
+                        ]
+                    });
+                </script>
+            </div>
+
+
+        </div>
+
+        <!-- robotics -->
+        <div class="page robotics" id="page-robotics">
+
+            <div class="page-title">Projects - Click for More Info</div>
+            <div class="robotics-card-container">
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="fadeInDescription('quadruped');">
+                    <div class="robotics-card-title">Quadruped</div>
                 </div>
-        
-            </div>
-            
-        </div>
-            
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="fadeIn(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
+                <div class="robotics-card" style="background-image: url(./image/robotics/dog.png);"
+                    onclick="fadeIn(quadruped)">
+                    <div class="robotics-card-title">Quadruped</div>
+                </div>
 
-            <div data-depth="0.2" style="width:100%;height:100%;text-align: left;">
-                <span class="caption">
-                    <p><strong>Victor Zhang</strong></p>
-                    <p>Hi, welcome to my website!</p>
-                    <div class="extraInfo">I'm going into 2nd year pursuing a degree in Mechatronics at Western
-                        University.</div>
-                    <p>New projects COMING SOON!</p> <img src="img/cat.gif" width="18.5%;">
-                </span>
             </div>
 
+            <!-- Project Description -->
+            <div class="page-content" id="project-content">
+                <div class="page-project-description" id="description">
+
+                    <div id="quadruped">
+                        <div class="close" onclick="fadeOutDescription(quadruped)"></div>
+                        Project Description
+                        <img src="./image/robotics/dog.png" class="page-content-image">
+                        Github Repo:
+                        <br>
+                        Progress Bar
+                    </div>
+
+                </div>
+            </div>
         </div>
 
+        <!-- graphics -->
+        <div class="page graphics" id="page-graphics">
+            <div class="page-title">Projects</div>
 
-        <!-- menubar -->
-        <div class="menubar">
-            <ul class="menu">
-                <li><a href="mailto:vzhang24@uwo.ca"><img src=/img/email.png height=30px></a></li>
-                <li><a href="https://www.instagram.com/vicksdev/"><img src=/img/ig.png height=30px></a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/victor-zhang-9a1510146/"><img src=/img/linkedin2.png
-                            height=30px></a></li>
-            </ul>
+        </div>
+
+        <!-- web -->
+        <div class="page web" id="page-web">
+            Current Projects
+
+        </div>
+
+        <!-- hobby -->
+        <div class="page hobby" id="page-hobby">
+            Current Projects
+
+        </div>
+
+        <!-- cad -->
+        <div class="page cad" id="page-cad">
+            Current Projects
+
+        </div>
+
+        <!-- others -->
+        <div class="page others" id="page-others">
+            Hi! My name is Victor and I am a second year Mechatronic Engineering student. You will often find me lurking
+            in the 3D-printing, multicopter, mecahnical keyboard subreddits.
+            I am a cryptocurrency believer, always HODL'ing Bitcoin and Dogecoin. My other hobbies are robotics and
+            reading.
+            You can find a list of books I read <a
+                href="https://www.goodreads.com/review/list/53986333?shelf=read">here</a>.
+            If you liked my website or enjoyed reading about me, definitely reach out through email or LinkedIn! (found
+            below)
+
         </div>
 
 
     </div>
 
-    <!-- loading page -->
-    <div id="loading">
-        <div class="loading">
-            <p>Loading content...</p>
 
-            <div class="loadingbar" id="bar">
-                <div id="bartext" style="color:white;padding:5px;"> 0% </div>
-            </div>
+    <!-- Scripts -->
+    <script src="js/script.js" async></script>
+    <script src="js/animations.js"></script>
 
-        </div>
-        
-    </div>
-
-    <!-- page 2 -->
-    <div id="main">
-
-        <!-- gallery for first pics -->
-        <div class="gallery" id="gallery">
-
-            <img src="">
-
-            <button id="close"> </button>
-
-        </div>
-        <!-- BIRDS -->
-        <div>
-            <div class="bird-container bird-container--one">
-                <div class="bird bird--one"></div>
-            </div>
-
-            <div class="bird-container bird-container--two">
-                <div class="bird bird--two"></div>
-            </div>
-        </div>
-
-
-        <div class="wrapper">
-            <div class="slides" id="slides">
-                <div class="slide" id="card1">
-                    <img src="img/1c.png" class="pic">
-                    <img src="img/billboard.jpg" class="billboard">
-                </div>
-
-                <div class="slide" id="card2">
-                    <a href="http://mastermenu.live"><img src="img/2c.png" class="pic"></a>
-                    <img src="img/billboard.jpg" class="billboard">
-                </div>
-
-                <div class="slide" id="card3">
-                    <img src="img/3.png" class="pic">
-                    <img src="img/billboard.jpg" class="billboard">
-                </div>
-
-                <div class="slide" id="card4">
-                    <img src="img/4.png" class="pic">
-                    <img src="img/billboard.jpg" class="billboard">
-                </div>
-
-                <div class="slide" id="card5">
-                    <img src="img/5.png" class="pic">
-                    <img src="img/billboard.jpg" class="billboard">
-                </div>
-
-            </div>
-            <button id="previous" class="control prev"></button>
-            <button id="nextup" class="control next"></button>
-
-        </div>
-
-
-
-
-
-        <div class="theDude">
-            <div id="person">
-            </div>
-
-            <div class="speech-bubble">
-                <h2 id="text"> Let's walk through some of my work! </h2>
-            </div>
-        </div>
+    <!-- footer -->
+    <div class="footer-style">
+        <a href="https://github.com/zhangvicto"><img src="image/white_github.png" height=22px></a>
+        <a href=mailto:1zhangvic@gmail.com><img src="image/white_email.png" height=22px></a>
+        <a href=""><img src="image/white_linkedin.png" height=22px></a>
+        <br>
+        Portfolio Website by Victor Zhang
 
     </div>
 
-    <!-- parallax declare code block-->
-    <script>
-        let scene = document.getElementById('parallax');
-        let parallax = new Parallax(scene, { relativeInput: true });
 
-    </script>
-       
-    <script type="text/javascript" src="js/customslider.js"></script>
-    <!-- <script type="text/javascript" src="js/slidealt.js"></script> -->
-    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
-
-
-<footer id="foot">
-    <div style="overflow: hidden;width:100%;"> Vicks<strong>Dev</strong> 2020 <strong>
-    </div>
-</footer>
 
 </html>

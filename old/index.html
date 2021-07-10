@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- website starts here -->
+<html>
+
+<head>
+    <title>Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+</head>
+
+
+<body id="userInput">
+    <div id="content">
+        <!-- top bar -->
+        <div class="topbar">
+
+            <div class="loc"> <a
+                    href="https://www.google.com/search?q=oakville&oq=oakville&aqs=chrome..69i57j46j0l2j69i60j69i61j69i60l2.1674j1j9&sourceid=chrome&ie=UTF-8"
+                    style="text-decoration: none;color:white;;">Oakville, ON</a></div>
+        </div>
+
+        <!-- intro -->
+        <div id="parallax" class="intro" data-relative-input="true">
+            
+        <div data-depth="0.11" > 
+            <div class="profileContainer">
+                <div class="profile"></div>
+
+                <div class="buttonContainer">
+                <button id="btn1" class="enterBtn" onclick="btnAction()">Press Enter!</button>
+                </div>
+        
+            </div>
+            
+        </div>
+            
+
+            <div data-depth="0.2" style="width:100%;height:100%;text-align: left;">
+                <span class="caption">
+                    <p><strong>Victor Zhang</strong></p>
+                    <p>Hi, welcome to my website!</p>
+                    <div class="extraInfo">I'm going into 2nd year pursuing a degree in Mechatronics at Western
+                        University.</div>
+                    <p>New projects COMING SOON!</p> <img src="img/cat.gif" width="18.5%;">
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- menubar -->
+        <div class="menubar">
+            <ul class="menu">
+                <li><a href="mailto:vzhang24@uwo.ca"><img src=/img/email.png height=30px></a></li>
+                <li><a href="https://www.instagram.com/vicksdev/"><img src=/img/ig.png height=30px></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/victor-zhang-9a1510146/"><img src=/img/linkedin2.png
+                            height=30px></a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!-- loading page -->
+    <div id="loading">
+        <div class="loading">
+            <p>Loading content...</p>
+
+            <div class="loadingbar" id="bar">
+                <div id="bartext" style="color:white;padding:5px;"> 0% </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!-- page 2 -->
+    <div id="main">
+
+        <!-- gallery for first pics -->
+        <div class="gallery" id="gallery">
+
+            <img src="">
+
+            <button id="close"> </button>
+
+        </div>
+        <!-- BIRDS -->
+        <div>
+            <div class="bird-container bird-container--one">
+                <div class="bird bird--one"></div>
+            </div>
+
+            <div class="bird-container bird-container--two">
+                <div class="bird bird--two"></div>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="slides" id="slides">
+                <div class="slide" id="card1">
+                    <img src="img/1c.png" class="pic">
+                    <img src="img/billboard.jpg" class="billboard">
+                </div>
+
+                <div class="slide" id="card2">
+                    <a href="http://mastermenu.live"><img src="img/2c.png" class="pic"></a>
+                    <img src="img/billboard.jpg" class="billboard">
+                </div>
+
+                <div class="slide" id="card3">
+                    <img src="img/3.png" class="pic">
+                    <img src="img/billboard.jpg" class="billboard">
+                </div>
+
+                <div class="slide" id="card4">
+                    <img src="img/4.png" class="pic">
+                    <img src="img/billboard.jpg" class="billboard">
+                </div>
+
+                <div class="slide" id="card5">
+                    <img src="img/5.png" class="pic">
+                    <img src="img/billboard.jpg" class="billboard">
+                </div>
+
+            </div>
+            <button id="previous" class="control prev"></button>
+            <button id="nextup" class="control next"></button>
+
+        </div>
+
+
+
+
+
+        <div class="theDude">
+            <div id="person">
+            </div>
+
+            <div class="speech-bubble">
+                <h2 id="text"> Let's walk through some of my work! </h2>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- parallax declare code block-->
+    <script>
+        let scene = document.getElementById('parallax');
+        let parallax = new Parallax(scene, { relativeInput: true });
+
+    </script>
+       
+    <script type="text/javascript" src="js/customslider.js"></script>
+    <!-- <script type="text/javascript" src="js/slidealt.js"></script> -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+
+<footer id="foot">
+    <div style="overflow: hidden;width:100%;"> Vicks<strong>Dev</strong> 2020 <strong>
+    </div>
+</footer>
+
+</html>

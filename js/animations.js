@@ -51,3 +51,15 @@ function topMarginUp(element, dis, time, speed) {
 function elementOpacity(element, display) {
     element.opacity = display;
 }
+
+function fadeInDescription(element) {
+    fadeIn(document.getElementById(element));
+    fadeIn(document.getElementById("description"));
+    fadeIn(document.getElementById("project-content"));
+}
+
+function fadeOutDescription(element) {
+    fadeOut(document.getElementById(element));
+    fadeOut(document.getElementById("description"));
+    fadeOut(document.getElementById("project-content"));
+}

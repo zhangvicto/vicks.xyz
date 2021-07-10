@@ -91,13 +91,4 @@ menuOthers.addEventListener("click", function() {
 let projectContent = document.getElementById("project-content");
 let quadruped = document.getElementById("quadruped");
 
-function showCard(element) {
-    //projectContent
-    element.style.display = "block";
-    //button getElementById
-}
-
-function closeCard() {
-
-}
 
