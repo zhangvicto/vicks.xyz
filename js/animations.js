@@ -59,7 +59,7 @@ function fadeInDescription(element) {
 }
 
 function fadeOutDescription(element) {
-    fadeOut(document.getElementById(element));
+    fadeOut(element);
     fadeOut(document.getElementById("description"));
     fadeOut(document.getElementById("project-content"));
 }

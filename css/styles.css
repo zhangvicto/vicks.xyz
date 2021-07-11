@@ -323,10 +323,11 @@ body {
 }
 
 .page-project-description {
+    color:black;
     background-color: white;
     position: absolute;
     border-radius: 20px;
-    height: 75vh;
+    height: 75vh; 
     width: 75vw;
     top: 50%;
     left: 50%; 
@@ -345,7 +346,27 @@ body {
     
 }
 
+#description {
+    display: none;
+    opacity: 0;
+}
+
 #quadruped {
+    display: none;
+    opacity: 0;
+}
+
+#spidey {
+    display: none;
+    opacity: 0;
+}
+
+#motor1 {
+    display: none;
+    opacity: 0;
+}
+
+#lim {
     display: none;
     opacity: 0;
 }
