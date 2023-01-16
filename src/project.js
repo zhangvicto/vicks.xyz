@@ -14,7 +14,7 @@ function Projects() {
 
 var portfolio = [
   {
-    name: 'FAST Research Lab Hot Belty',
+    name: 'FAST Research Lab High-T Belty',
     category: ['all', 'electrical', 'mechanical', 'robotics', 'ongoing'],
     bgimage: '/bgimg/hot_belty.png',
     status: 'Ongoing',
