@@ -14,12 +14,25 @@ function Projects() {
 
 var portfolio = [
   {
-    name: 'FAST Research Lab High-T Belty',
+    name: 'Pastruder',
+    category: ['all', 'mechanical', 'robotics', 'completed'],
+    bgimage: '/bgimg/pastruder/pastruder.png',
+    status: 'Completed',
+    statusColor: 'green',
+    images: ['/bgimg/hot-belty/hot_belty.png', '/bgimg/hot-belty/1.jpg','/bgimg/hot-belty/2.jpg','/bgimg/hot-belty/3.jpg','/bgimg/hot-belty/4.jpg','/bgimg/hot-belty/5.jpg'],
+    description: 'Extrude paste material using existing 3D-printing hardware',
+    objectives: ['To be updated'],
+    technicals: ['To be updated'],
+    results: [], 
+    links: ['https://github.com/zhangvicto/Hot-Belty','https://www.appropedia.org/Category:FAST']
+  },
+  {
+    name: 'High Temperature Conveyor Belt 3D-Printer',
     category: ['all', 'electrical', 'mechanical', 'robotics', 'ongoing'],
-    bgimage: '/bgimg/hot_belty.png',
+    bgimage: '/bgimg/hot-belty/4.jpg',
     status: 'Ongoing',
     statusColor: 'green',
-    images: ['/bgimg/hot_belty.png'],
+    images: ['/bgimg/hot-belty/hot_belty.png', '/bgimg/hot-belty/1.jpg','/bgimg/hot-belty/2.jpg','/bgimg/hot-belty/3.jpg','/bgimg/hot-belty/4.jpg','/bgimg/hot-belty/5.jpg'],
     description: 'Building a high-temperature conveyor belt 3d-printer for the Western FAST Lab.',
     objectives: ['High-temperature capabilities for printing PEKK/PEI material', 'Low cost', 'Easy to manufacture', 'Ease of tuning', 'Easy toolhead change', 'Use of CoreXY kinematics','Infinite print volume in z-direction','Open-source, easy-to-find components, and software','Maximize 3d-printed parts'],
     technicals: ['135C - 200C enclosure temperature', '500C+ hotend', 'Custom printer firmware', 'Custom bellow design'],
@@ -29,7 +42,7 @@ var portfolio = [
   {
     name: 'Custom Conveyor Belt 3D-Printer',
     category: ['all', 'electrical', 'mechanical', 'robotics', 'ongoing'],
-    bgimage: '/bgimg/printer-render.png',
+    bgimage: '/bgimg/printer-photo.jpg',
     status: 'Ongoing',
     statusColor: 'green',
     images: ['/bgimg/printer-render.png','/bgimg/printer-front.png', '/bgimg/printer-iso.png', '/bgimg/printer-side.png', '/bgimg/printer-gantry.png', '/bgimg/printer-photo.jpg','/bgimg/printer-print.jpg'],
@@ -40,7 +53,7 @@ var portfolio = [
     links: ['https://www.youtube.com/watch?v=r81HVeg5oeo','https://github.com/zhangvicto/Belty']
   },
   {
-    name: 'Doge Quadruped',
+    name: 'Dog Quadruped',
     category: ['all', 'electrical', 'mechanical', 'software', 'robotics', 'ongoing'],
     bgimage: '/bgimg/doggy-render.png',
     status: 'Ongoing',
@@ -93,8 +106,8 @@ var portfolio = [
   },
   {
     name: 'High Torque Cycloidal Robotic Actuator',
-    category: ['all', 'electrical', 'mechanical', 'software', 'robotics', 'ongoing'],
-    bgimage: '/bgimg/cycloidal_drive_render.png',
+    category: ['all', 'electrical', 'mechanical', 'software', 'robotics', 'completed'],
+    bgimage: '/bgimg/drive-2.jpg',
     status: 'Ongoing',
     statusColor: 'green',
     images: ['/bgimg/cycloidal_drive_render.png', '/bgimg/drive-1.jpg', '/bgimg/drive-2.jpg'],
@@ -107,29 +120,29 @@ var portfolio = [
   {
     name: 'Budget BLDC Motor Control',
     category: ['all', 'electrical', 'robotics', 'completed'],
-    bgimage: '/bgimg/motor1.jpg',
+    bgimage: '/bgimg/dupont.jfif',
     status: 'Completed',
     statusColor: 'red',
-    images: ['/bgimg/intro.jfif', '/bgimg/phase.jfif', '/bgimg/spi-header.jfif', '/bgimg/dupont.jfif', '/bgimg/', '/bgimg/'],
+    images: ['/bgimg/intro.jfif', '/bgimg/phase.jfif', '/bgimg/spi-header.jfif', '/bgimg/dupont.jfif'],
     description: 'Cheap BLDC motor and control for under $20.',
     objectives: ['Low Cost BLDC','Torque Controlled BLDC', 'Minimum modification and technical skills required for implementation'],
     technicals: ['SimpleFOC Library torque force control','100PPR','24 pole pairs BLDC motor'],
     results: ['Total price of less than $20 CAD','Fully torque controlled with encoder'], 
     links: ['https://github.com/zhangvicto/CMC-24H-SimpleFOC-BCG']
   },  
-  {
-    name: 'Linear Induction Motor Prototype',
-    category: ['all', 'electrical', 'mechanical', 'ongoing'],
-    bgimage: '/bgimg/lim.png',
-    status: 'Ongoing',
-    statusColor: 'green',
-    images: ['/bgimg/lim.png'],
-    description: 'Western Hyperloop LIM Prototype and simulation.',
-    objectives: [''],
-    technicals: ['Planned: Litz wire reducing eddy currents','4 pole pairs','double sided LIM', 'Battery: 48V', 'Max speed 200km/hr'],
-    results: ['Planned: to be tested on fly wheel'], 
-    links: []
-  },
+  // {
+  //   name: 'Linear Induction Motor Prototype',
+  //   category: ['all', 'electrical', 'mechanical', 'ongoing'],
+  //   bgimage: '/bgimg/lim.png',
+  //   status: 'Ongoing',
+  //   statusColor: 'green',
+  //   images: ['/bgimg/lim.png'],
+  //   description: 'Western Hyperloop LIM Prototype and simulation.',
+  //   objectives: [''],
+  //   technicals: ['Planned: Litz wire reducing eddy currents','4 pole pairs','double sided LIM', 'Battery: 48V', 'Max speed 200km/hr'],
+  //   results: ['Planned: to be tested on fly wheel'], 
+  //   links: []
+  // },
   {
     name: 'Green Light Mentorship Website',
     category: ['all', 'software', 'frontend', 'updating'],
@@ -143,19 +156,19 @@ var portfolio = [
     results: ['Currently under renovation, a React-based site is being created for better UX and ease of update'], 
     links: ['https://greenlightmentorship.com/']
   },
-  {
-    name: 'SpeechQ',
-    category: ['all', 'software', 'hackathon', 'completed'],
-    bgimage: '/bgimg/speechq.png',
-    status: 'Completed',
-    statusColor: 'red',
-    images: ['/bgimg/speechq.png', '/bgimg/speechq-web.png'],
-    description: 'Word prompt web app to enhance your presentation.',
-    objectives: ['Improve eye contact in presentations','Ease of use and installation'],
-    technicals: ['Linked lists to process and display words'],
-    results: ['Webapp capable of prompt words in a speech','Chrome extension', 'Need to improve the code to make it run faster, in hindsight, I should have used the built it using the default javascript array since it is a linked list'], 
-    links: ['https://speechq.xyz/','https://devpost.com/software/speechq']
-  },
+  // {
+  //   name: 'SpeechQ',
+  //   category: ['all', 'software', 'hackathon', 'completed'],
+  //   bgimage: '/bgimg/speechq.png',
+  //   status: 'Completed',
+  //   statusColor: 'red',
+  //   images: ['/bgimg/speechq.png', '/bgimg/speechq-web.png'],
+  //   description: 'Word prompt web app to enhance your presentation.',
+  //   objectives: ['Improve eye contact in presentations','Ease of use and installation'],
+  //   technicals: ['Linked lists to process and display words'],
+  //   results: ['Webapp capable of prompt words in a speech','Chrome extension', 'Need to improve the code to make it run faster, in hindsight, I should have used the built it using the default javascript array since it is a linked list'], 
+  //   links: ['https://speechq.xyz/','https://devpost.com/software/speechq']
+  // },
   {
     name: 'SmartCaliper',
     category: ['all', 'software', 'mechanical', 'electrical', 'software', 'hackathon', 'completed'],
