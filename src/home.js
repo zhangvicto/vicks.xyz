@@ -73,7 +73,7 @@ const Char = () => {
 function CallToAction() {
   return (
     <button className="cta-button">
-      <NavLink to='/projects'>Click for My Projects</NavLink>
+      <NavLink to='/projects'>SEE MY PROJECTS!</NavLink>
       <div className="button-arrow"></div>
     </button>
   )

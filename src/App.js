@@ -5,7 +5,7 @@ import { NavLink, Switch, Route } from 'react-router-dom';
 import Home from "./home";
 import Projects from "./project";
 import Resume from "./resume";
-import Blog from "./blog";
+import Blog from "./blog.jsx";
 import ProjectPage from "./projectPage";
 import logo from './logo.png'
 

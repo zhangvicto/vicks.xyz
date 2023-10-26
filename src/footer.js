@@ -14,7 +14,7 @@ const Footer = () => {
                 </a>
             </div>
 
-            <div className="footer-text">Portfolio Website 2021 - Victor Zhang</div>
+            <div className="footer-text">Portfolio 2023 Victor Zhang</div>
         </div>
     );
 }
