@@ -123,12 +123,12 @@ const blogPostStyle = {
   marginBottom: "20px"
 }
 
-const textSectionStyleMain = {
+// const textSectionStyleMain = {
 
-}
+// }
 
-const textSectionStyleAlt = {
+// const textSectionStyleAlt = {
 
-}
+// }
 
 export default Blogs;

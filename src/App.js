@@ -24,8 +24,8 @@ class MenuBar extends Component {
             <ol className="menu-bar">
                 <NavLink exact className="menu-logo" to='/'><img src={logo} alt="Logo" /></NavLink>
                 <li className="menu-item push-menu"><NavLink exact className="menu-text" activeClassName="current-menu" to='/'>Home</NavLink></li>
-                <li className="menu-item"><NavLink exact className="menu-text" activeClassName="current-menu" to='/resume'>Resume</NavLink></li>
                 <li className="menu-item"><NavLink exact className="menu-text" activeClassName="current-menu" to='/projects'>Projects</NavLink></li>
+                <li className="menu-item"><NavLink exact className="menu-text" activeClassName="current-menu" to='/resume'>Resume</NavLink></li>
                 <li className="menu-item"><NavLink exact className="menu-text" activeClassName="current-menu" to='/blog'>Blog</NavLink></li>
             </ol>
         );

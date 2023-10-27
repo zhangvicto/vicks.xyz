@@ -8,7 +8,7 @@ const ProjectPage = (props) => {
 
     let item = props.location;
     return (
-        <div class="content">
+        <div className="content">
             <Link to="./projects" className="project-back">
                 <div className="back-arrow"></div>Back
             </Link>
@@ -22,30 +22,31 @@ const ProjectPage = (props) => {
             <div className="project-page">
 
                 <div className="project-images">
-                    {item.itemImages.map((item, i) =>
+                    {/* {item.itemImages.map((item, i) =>
                         <img className="project-image" alt={item.itemName} key={i} src={process.env.PUBLIC_URL + item} />
-                    )}
+                    )} */}
+                    {Gallery(item.itemImages)}
                 </div>
                 <div className="project-block">
-                    <div class="project-heading">Objectives</div>
+                    <div className="project-heading">Objectives</div>
                     {item.itemObjectives.map((item, i) =>
                         <li className="project-list-item" key={i}>{item}</li>
                     )}
                 </div>
                 <div className="project-block">
-                    <div class="project-heading">Technicals</div>
+                    <div className="project-heading">Technicals</div>
                     {item.itemTechnicals.map((item, i) =>
                         <li className="project-list-item" key={i}>{item}</li>
                     )}
                 </div>
                 <div className="project-block">
-                    <div class="project-heading">Results/Progress</div>
+                    <div className="project-heading">Results/Progress</div>
                     {item.itemResults.map((item, i) =>
                         <li className="project-list-item" key={i}>{item}</li>
                     )}
                 </div>
                 <div className="project-block">
-                    <div class="project-heading">Related Links</div>
+                    <div className="project-heading">Related Links</div>
                     {item.itemLinks.map((item, i) =>
                         <li className="project-list-item" key={i}><a href={item}>{item}</a></li>
                     )}
@@ -58,59 +59,67 @@ const ProjectPage = (props) => {
 
 function Gallery(images_src) {
     const { viewportHeight, viewportWidth } = useWindowDimensions();
-    let maxHeight = viewportHeight*0.7;
-    
-    let row = [];
-    let rows = [];
-    let currentWidth = 0;
+    let maxHeight = viewportHeight * 0.7;
+
+    // Aspect Ratios 
+    let image_ar = []
     images_src.forEach(image_src => {
-        let image = new Image(); 
+        let image = new Image();
 
-        row.push(image);
-        
-        image.onload = function(){
-            currentWidth += Math.round((maxHeight / image.height) * image.width);
-            if (currentWidth >= viewportWidth) {
-                rows.push(row);
-                row = [];
-                currentWidth = 0;
-            }
-          }
-
+        image.onload = function () {
+            image_ar.push({ width: image.width, height: image.height });
+        }
         image.src = image_src;
+
     });
-    row.length && rows.push(row);
+    console.log(image_ar)
+    var layoutGeometry = require('justified-layout')([image_ar])
+    console.log(layoutGeometry)
+
+    const imageContainerStyle = {
+        width: '1060px', 
+        height: layoutGeometry.containerHeight, 
+        display: 'flex', 
+        flexFlow: 'row wrap', 
+        justifyContent: 'center'
+    }
+
+    const imageStyle = {
+        width: '200px',
+    }
 
     return (
-        <div>
-
-
+        <div style={imageContainerStyle}>
+            {images_src.map((item, i) =>
+                <img style={imageStyle} alt={item.itemName} key={i} src={process.env.PUBLIC_URL + item} />
+            )}
         </div>
     )
 }
 
+
 // Viewport Dims
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+        width,
+        height
+    };
 }
 
 function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+        }
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
-  return windowDimensions;
+    return windowDimensions;
 }
 
 

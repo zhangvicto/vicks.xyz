@@ -1,7 +1,7 @@
 import './index.css';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Footer from'./footer';
+import Footer from './footer';
 
 function Projects() {
   return (
@@ -18,13 +18,13 @@ var portfolio = [
     category: ['all', 'mechanical', 'robotics', 'completed'],
     bgimage: '/bgimg/pastruder/pastruder.png',
     status: 'Completed',
-    statusColor: 'green',
-    images: ['/bgimg/hot-belty/hot_belty.png', '/bgimg/hot-belty/1.jpg','/bgimg/hot-belty/2.jpg','/bgimg/hot-belty/3.jpg','/bgimg/hot-belty/4.jpg','/bgimg/hot-belty/5.jpg'],
+    statusColor: 'red',
+    images: ['/bgimg/hot-belty/hot_belty.png', '/bgimg/hot-belty/1.jpg', '/bgimg/hot-belty/2.jpg', '/bgimg/hot-belty/3.jpg', '/bgimg/hot-belty/4.jpg', '/bgimg/hot-belty/5.jpg'],
     description: 'Extrude paste material using existing 3D-printing hardware',
     objectives: ['To be updated'],
     technicals: ['To be updated'],
-    results: [], 
-    links: ['https://github.com/zhangvicto/Hot-Belty','https://www.appropedia.org/Category:FAST']
+    results: [],
+    links: ['https://github.com/zhangvicto/Hot-Belty', 'https://www.appropedia.org/Category:FAST']
   },
   {
     name: 'High Temperature Conveyor Belt 3D-Printer',
@@ -32,12 +32,12 @@ var portfolio = [
     bgimage: '/bgimg/hot-belty/4.jpg',
     status: 'Ongoing',
     statusColor: 'green',
-    images: ['/bgimg/hot-belty/hot_belty.png', '/bgimg/hot-belty/1.jpg','/bgimg/hot-belty/2.jpg','/bgimg/hot-belty/3.jpg','/bgimg/hot-belty/4.jpg','/bgimg/hot-belty/5.jpg'],
+    images: ['/bgimg/hot-belty/hot_belty.png', '/bgimg/hot-belty/1.jpg', '/bgimg/hot-belty/2.jpg', '/bgimg/hot-belty/3.jpg', '/bgimg/hot-belty/4.jpg', '/bgimg/hot-belty/5.jpg'],
     description: 'Building a high-temperature conveyor belt 3d-printer for the Western FAST Lab.',
-    objectives: ['High-temperature capabilities for printing PEKK/PEI material', 'Low cost', 'Easy to manufacture', 'Ease of tuning', 'Easy toolhead change', 'Use of CoreXY kinematics','Infinite print volume in z-direction','Open-source, easy-to-find components, and software','Maximize 3d-printed parts'],
+    objectives: ['High-temperature capabilities for printing PEKK/PEI material', 'Low cost', 'Easy to manufacture', 'Ease of tuning', 'Easy toolhead change', 'Use of CoreXY kinematics', 'Infinite print volume in z-direction', 'Open-source, easy-to-find components, and software', 'Maximize 3d-printed parts'],
     technicals: ['135C - 200C enclosure temperature', '500C+ hotend', 'Custom printer firmware', 'Custom bellow design'],
-    results: ['BOM and part ordering','Designing gantry and enclosure'], 
-    links: ['https://github.com/zhangvicto/Hot-Belty','https://www.appropedia.org/Category:FAST']
+    results: ['BOM and part ordering', 'Designing gantry and enclosure'],
+    links: ['https://github.com/zhangvicto/Hot-Belty', 'https://www.appropedia.org/Category:FAST']
   },
   {
     name: 'Custom Conveyor Belt 3D-Printer',
@@ -45,12 +45,12 @@ var portfolio = [
     bgimage: '/bgimg/printer-photo.jpg',
     status: 'Ongoing',
     statusColor: 'green',
-    images: ['/bgimg/printer-render.png','/bgimg/printer-front.png', '/bgimg/printer-iso.png', '/bgimg/printer-side.png', '/bgimg/printer-gantry.png', '/bgimg/printer-photo.jpg','/bgimg/printer-print.jpg'],
+    images: ['/bgimg/printer-render.png', '/bgimg/printer-front.png', '/bgimg/printer-iso.png', '/bgimg/printer-side.png', '/bgimg/printer-gantry.png', '/bgimg/printer-photo.jpg', '/bgimg/printer-print.jpg'],
     description: 'Low cost, custom conveyor belt printer.',
-    objectives: ['Low-cost conveyor belt 3d-printer','Fast speed and high print quality','Use of CoreXY kinematics','Infinite print volume in z-direction','Open-source, easy-to-find components, and software','3d-printed parts'],
-    technicals: ['Designed and modeled with SOLIDWORKS','Custom 3d-printing firmware compiled with Marlin (open-source 3d-printer firmware)','Constructed using 2020 aluminum extrusions and off-the-shelf electronic components'],
-    results: ['Successful construction using low-cost open-source hardware components and 3d-printed parts','Successful high-speed prints using Marlin firmware (software implementation)','CoreXY gantry movement success','Currently working at research lab to implement high-temperature conveyor belt printing',],
-    links: ['https://www.youtube.com/watch?v=r81HVeg5oeo','https://github.com/zhangvicto/Belty']
+    objectives: ['Low-cost conveyor belt 3d-printer', 'Fast speed and high print quality', 'Use of CoreXY kinematics', 'Infinite print volume in z-direction', 'Open-source, easy-to-find components, and software', '3d-printed parts'],
+    technicals: ['Designed and modeled with SOLIDWORKS', 'Custom 3d-printing firmware compiled with Marlin (open-source 3d-printer firmware)', 'Constructed using 2020 aluminum extrusions and off-the-shelf electronic components'],
+    results: ['Successful construction using low-cost open-source hardware components and 3d-printed parts', 'Successful high-speed prints using Marlin firmware (software implementation)', 'CoreXY gantry movement success', 'Currently working at research lab to implement high-temperature conveyor belt printing',],
+    links: ['https://www.youtube.com/watch?v=r81HVeg5oeo', 'https://github.com/zhangvicto/Belty']
   },
   {
     name: 'Dog Quadruped',
@@ -60,9 +60,9 @@ var portfolio = [
     statusColor: 'green',
     images: ['/bgimg/doggy-render.png', '/bgimg/doggy-top.png', '/bgimg/doggy-photo.jpg'],
     description: 'Cheap 12DOF quadruped with RL gaits',
-    objectives: ['Low-cost and ease of production','Lightweight design',' Open-Source software and design','3d-printed parts'],
+    objectives: ['Low-cost and ease of production', 'Lightweight design', ' Open-Source software and design', '3d-printed parts'],
     technicals: ['Goal: Reinforcement Learning with PyBullet'],
-    results: ['Standing','Plan: Better designed parts and optimize limb torque','Total cost less than $250 excluding camera'],
+    results: ['Standing', 'Plan: Better designed parts and optimize limb torque', 'Total cost less than $250 excluding camera'],
     links: []
   },
   {
@@ -73,10 +73,10 @@ var portfolio = [
     statusColor: 'red',
     images: ['/bgimg/spidey-render.png', '/bgimg/spidey-photo.jpg'],
     description: 'A cheap 12DOF robot.',
-    objectives: ['Low-cost and ease of production','Lightweight design',' Open-Source software and design','3d-printed parts'],
-    technicals: ['Inverse kinematics software using Python','Alternative control using Arduino and C','Designed and modeled with SOLIDWORKS'],
-    results: ['Successful implementation of locomotion software','Total cost of less than $150 CAD'], 
-    links: ['https://github.com/JasonJZLiu/Spidey-Quadruped','https://www.youtube.com/watch?v=nW5I9bcBE7k']
+    objectives: ['Low-cost and ease of production', 'Lightweight design', ' Open-Source software and design', '3d-printed parts'],
+    technicals: ['Inverse kinematics software using Python', 'Alternative control using Arduino and C', 'Designed and modeled with SOLIDWORKS'],
+    results: ['Successful implementation of locomotion software', 'Total cost of less than $150 CAD'],
+    links: ['https://github.com/JasonJZLiu/Spidey-Quadruped', 'https://www.youtube.com/watch?v=nW5I9bcBE7k']
   },
   {
     name: 'Leakio',
@@ -86,10 +86,10 @@ var portfolio = [
     statusColor: 'red',
     images: ['/bgimg/leakio.png', '/bgimg/leakio-pcb.jpg', '/bgimg/leakio-schematic.jpg', '/bgimg/leakio-model.jpg'],
     description: 'Smart leak detection for homes.',
-    objectives: ['Reduce water damages in homes','All in one package solution'],
-    technicals: ['Raspberry Pi Python script service','PCB Designed with Eagle PCB (ESP32 MCU)', 'PHP based live webapp demo', 'Pytorch ML - generated test set using Python, ML untested', 'Google SQL Server', 'Figma UI Prototype' ],
-    results: ['First place at Hackthe6ix 2021', 'More details in the links below'], 
-    links: ['https://leakio.me/','https://www.figma.com/proto/6UNThP1C1Y6ujhllF1Z1cS/Leakio?node-id=206%3A281', 'https://devpost.com/software/leakio','https://www.youtube.com/watch?v=TqhrWrrupmE&t=1s']
+    objectives: ['Reduce water damages in homes', 'All in one package solution'],
+    technicals: ['Raspberry Pi Python script service', 'PCB Designed with Eagle PCB (ESP32 MCU)', 'PHP based live webapp demo', 'Pytorch ML - generated test set using Python, ML untested', 'Google SQL Server', 'Figma UI Prototype'],
+    results: ['First place at Hackthe6ix 2021', 'More details in the links below'],
+    links: ['https://leakio.me/', 'https://www.figma.com/proto/6UNThP1C1Y6ujhllF1Z1cS/Leakio?node-id=206%3A281', 'https://devpost.com/software/leakio', 'https://www.youtube.com/watch?v=TqhrWrrupmE&t=1s']
   },
   {
     name: 'Western UES Website',
@@ -97,11 +97,11 @@ var portfolio = [
     bgimage: '/bgimg/ues.png',
     status: 'Updating',
     statusColor: 'orange',
-    images: ['/bgimg/ues.png', '/bgimg/ues-1.png', '/bgimg/ues-2.png', '/bgimg/ues-3.png'],
+    images: ['/bgimg/ues-1.png', '/bgimg/ues-2.png', '/bgimg/ues-3.png'],
     description: 'Organization Website for Western Undergraduate Engineering Society',
-    objectives: ['Improve website usability','Revamping old website'],
+    objectives: ['Improve website usability', 'Revamping old website'],
     technicals: ['Pure CSS+HTML+JS'],
-    results: ['Good feedback from executives'], 
+    results: ['Good feedback from executives'],
     links: ['https://www.westernues.com/', 'https://github.com/zhangvicto/Western-UES-Website']
   },
   {
@@ -113,8 +113,8 @@ var portfolio = [
     images: ['/bgimg/cycloidal_drive_render.png', '/bgimg/drive-1.jpg', '/bgimg/drive-2.jpg'],
     description: 'High torque, low weight robotic actuator using cycloidal disks for gear reduction.',
     objectives: ['High reduction ratio', '3d-printed parts for low cost', 'Backdrivable', 'High torque to price ratio', 'Suitable for robotic arm use', 'BLDC motor compatible'],
-    technicals: ['Designed and modeled with SOLIDWORKS', 'Rendered with SOLIDWORKS Visualize', 'Cycloidal disk curves drawn using parametric curves','1:28 reduction ratio through dual stage disks', 'Theoretical torque of 12Nm for a cost of less than $60', 'Torque to price ratio of 0.2 Nm/dollar', '5010 BLDC motor compatible'],
-    results: ['Prototype created and tested','More testing to be done for torque and usability',' New version being developed to use less metal parts and higher reduction ratio'], 
+    technicals: ['Designed and modeled with SOLIDWORKS', 'Rendered with SOLIDWORKS Visualize', 'Cycloidal disk curves drawn using parametric curves', '1:28 reduction ratio through dual stage disks', 'Theoretical torque of 12Nm for a cost of less than $60', 'Torque to price ratio of 0.2 Nm/dollar', '5010 BLDC motor compatible'],
+    results: ['Prototype created and tested', 'More testing to be done for torque and usability', ' New version being developed to use less metal parts and higher reduction ratio'],
     links: []
   },
   {
@@ -125,11 +125,11 @@ var portfolio = [
     statusColor: 'red',
     images: ['/bgimg/intro.jfif', '/bgimg/phase.jfif', '/bgimg/spi-header.jfif', '/bgimg/dupont.jfif'],
     description: 'Cheap BLDC motor and control for under $20.',
-    objectives: ['Low Cost BLDC','Torque Controlled BLDC', 'Minimum modification and technical skills required for implementation'],
-    technicals: ['SimpleFOC Library torque force control','100PPR','24 pole pairs BLDC motor'],
-    results: ['Total price of less than $20 CAD','Fully torque controlled with encoder'], 
+    objectives: ['Low Cost BLDC', 'Torque Controlled BLDC', 'Minimum modification and technical skills required for implementation'],
+    technicals: ['SimpleFOC Library torque force control', '100PPR', '24 pole pairs BLDC motor'],
+    results: ['Total price of less than $20 CAD', 'Fully torque controlled with encoder'],
     links: ['https://github.com/zhangvicto/CMC-24H-SimpleFOC-BCG']
-  },  
+  },
   // {
   //   name: 'Linear Induction Motor Prototype',
   //   category: ['all', 'electrical', 'mechanical', 'ongoing'],
@@ -153,7 +153,7 @@ var portfolio = [
     description: 'Organization website for Green Light Mentorship.',
     objectives: ['To create a website for Green Light Mentorship', 'Improve Green Light brand image'],
     technicals: ['Pure CSS+HTML+JS'],
-    results: ['Currently under renovation, a React-based site is being created for better UX and ease of update'], 
+    results: ['Currently under renovation, a React-based site is being created for better UX and ease of update'],
     links: ['https://greenlightmentorship.com/']
   },
   // {
@@ -179,7 +179,7 @@ var portfolio = [
     description: 'Digitized caliper upgrade package for hobbyists.',
     objectives: [],
     technicals: [],
-    results: ['"Most Novel Hack at Hackthe6ix 2020"'], 
+    results: ['"Most Novel Hack at Hackthe6ix 2020"'],
     links: ['https://devpost.com/software/smartcaliper']
   },
 ];

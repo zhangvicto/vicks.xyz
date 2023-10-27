@@ -7,10 +7,10 @@ const Footer = () => {
             <hr />
             <div className="footer-logo-container">
                 <a href="https://www.linkedin.com/in/victor-zhang-9a1510146/">
-                    <img class="footer-logo" alt="linkedin" src={linkedin} />
+                    <img className="footer-logo" alt="linkedin" src={linkedin} />
                 </a>
                 <a href="https://github.com/zhangvicto">
-                    <img class="footer-logo" alt="github" src={github} />
+                    <img className="footer-logo" alt="github" src={github} />
                 </a>
             </div>
 
